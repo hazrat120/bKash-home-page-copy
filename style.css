@@ -554,3 +554,23 @@ html {
 .fs--1 {
   font-size: 0.8rem;
 }
+
+/* ============ Touchpoint section =============*/
+#touchpoints {
+  padding: 4rem 0;
+}
+
+.touch-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.touch-cards {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: all 0.4s;
+  box-shadow: rgba(99, 99, 99, 0.8) 0px 2px 8px 0px;
+}
