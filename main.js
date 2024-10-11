@@ -66,3 +66,46 @@ function getDirection() {
 
   return direction;
 }
+
+let intervalId;
+
+function mokeupSlide() {
+  clearInterval(intervalId);
+  const textBoxes = document.getElementsByClassName("mokeup-block-item");
+
+  const boxSlides = document.getElementsByClassName("box-image");
+  let count = 0;
+
+  setInterval(() => {
+    if (count === 3) count = 0;
+
+    for (let box of textBoxes) {
+      const textBoxTitle = box.querySelector("h3");
+      const textBoxDot = box.querySelector(".rounded-circle");
+
+      textBoxTitle.classList.remove("box-underline");
+      textBoxDot.classList.remove("dot-animation");
+    }
+
+    for (let slide of boxSlides) {
+      slide.classList.remove("box-slide-show");
+    }
+
+    const textBox = textBoxes[count];
+    const slide = boxSlides[count];
+
+    console.log(slide);
+
+    slide.classList.add("box-slide-show");
+
+    const textBoxTitle = textBox.querySelector("h3");
+    const textBoxDot = textBox.querySelector(".rounded-circle");
+
+    textBoxTitle.classList.add("box-underline");
+    textBoxDot.classList.add("dot-animation");
+
+    count++;
+  }, 3000);
+}
+
+mokeupSlide();

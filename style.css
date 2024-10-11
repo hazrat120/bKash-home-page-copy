@@ -647,6 +647,11 @@ html {
   top: 0;
   z-index: 5;
 } */
+#secure-experience {
+  background: linear-gradient(#fff, #ffeff6);
+  padding-top: 30px !important;
+  padding-bottom: 50px !important;
+}
 
 .secure-grid-wrap {
   display: grid;
@@ -669,5 +674,69 @@ html {
   display: flex;
   align-items: end;
   flex-direction: column;
+  justify-content: space-evenly;
   row-gap: 50px;
+}
+
+.box-carousel-dot {
+  background-color: var(--primary-color) !important;
+  transition: all linear 0.4s;
+}
+
+.box-carousel-dot {
+  width: 20px;
+  height: 20px;
+  background-color: lightblue;
+}
+
+.dot-animation {
+  animation: easOut 3s ease-in-out;
+}
+
+@keyframes easOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1.3);
+  }
+}
+
+.box-carousel-nav-title {
+  color: var(--primary-color) !important;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.box-underline {
+  text-decoration: underline;
+}
+
+.box-carousel-nav-text {
+  font-size: 20px !important;
+  font-weight: 400;
+}
+
+.box-slides {
+  position: relative;
+  height: 642px;
+  overflow: hidden;
+}
+
+.box-slide-show {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 308px;
+  height: 642px;
+  display: none;
+}
+
+.box-slide-show {
+  display: block;
 }
