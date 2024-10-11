@@ -318,6 +318,9 @@ html {
   align-items: center;
   justify-content: center;
 }
+.servic-swiper-wrapper {
+  column-gap: 50px;
+}
 
 .swiper-pagination-bullet {
   width: 20px;

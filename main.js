@@ -47,7 +47,7 @@ var swiper = new Swiper(".mySwiper", {
 
 // ===== second swiper
 var swiper1 = new Swiper(".swiper1", {
-  slidesPerView: 7,
+  slidesPerView: 6,
   direction: getDirection(),
   navigation: {
     nextEl: ".swiper-button-next",
