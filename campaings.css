@@ -1,0 +1,103 @@
+/* Coampaings section style */
+
+:root {
+  --primary-color: #e2136e;
+  --secondary-color: #fff0f7;
+  --custome-color: #fff;
+  --color: #333;
+  --font: Roboto, SolaimanLipi, system-ui, -apple-system, "Segoe UI",
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.inp-form {
+  padding-bottom: 2rem !important;
+  margin-bottom: 0.5rem;
+}
+
+.input-group {
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.input-icon {
+  font-size: 1.25rem !important;
+}
+
+.input-serc-btn {
+  padding: 0 1rem;
+}
+
+.form-control:focus {
+  background-color: #fff;
+  border-color: #f189b7;
+  box-shadow: 0 0 0 0.25rem rgba(226, 19, 110, 0.25);
+  color: #333;
+  outline: 0;
+}
+
+.col-auto {
+  flex: 0 0 auto;
+  width: auto;
+  padding: 10px 7px;
+}
+
+.ser-btn {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #333;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1.25;
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.btn-xs {
+  border-color: #d8d8d8;
+  box-shadow: none !important;
+  padding: 0.25rem 1.5rem;
+}
+
+.off-card-wrapper {
+  display: flex;
+  align-items: center;
+  row-gap: 15px;
+  column-gap: 15px;
+}
+
+.card-body {
+  transition: color 0.3s;
+}
+
+.card-body:hover h5 {
+  color: var(--primary-color);
+}
+
+.offer-preview-card {
+  transition: all linear 0.3s;
+}
+.offer-preview-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px !important;
+}
+
+.same-card-container {
+  padding: 4rem 0;
+}
+
+.offer-container2 {
+  background: linear-gradient(#ffeff6, #fff);
+}

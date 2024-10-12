@@ -70,6 +70,7 @@ html {
   border-radius: 50rem !important;
   border-color: var(--primary-color);
   color: var(--primary-color);
+  transition: 0.4s;
 }
 
 .btn_outline:hover {
@@ -77,10 +78,14 @@ html {
   border-radius: 50rem !important;
   background-color: var(--primary-color);
   color: var(--custome-color);
-  transition: 0.4s;
 }
 
 /*========= Navbar style ========*/
+.dropdown-menu[data-bs-popper] {
+  top: 117% !important;
+  left: 0;
+  margin-top: var(--bs-dropdown-spacer);
+}
 
 .nav-link {
   position: relative;
@@ -103,7 +108,6 @@ html {
 
 .nav_head {
   background-color: var(--primary-color);
-  overflow: hidden;
 }
 
 .dropdown-toggle::after {
