@@ -1,0 +1,35 @@
+.student-container {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+p {
+  margin-bottom: 1rem;
+  margin-top: 0;
+  font-size: 20px;
+  line-height: 35px;
+}
+#student-heading {
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+  align-items: start;
+}
+
+.stu-head-tex {
+  font-size: 39px !important;
+  font-weight: 500;
+  line-height: 46px;
+}
+
+/* .stude-accou-btn{
+padding-bottom: ;
+} */
+
+.student-text-iframe {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.text-section {
+  padding-bottom: 64px;
+}

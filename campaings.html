@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <title>bKash campaings</title>
+
+    <!-- fontaswome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Slick Slider cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!--------- Animation css cdn ------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="bootstrapfile/bootstrap.min.css" />
+
+    <script src="bootstrapfile/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-------------- Navbar ------------>
+    <section class="nav_head sticky-top">
+      <nav class="container navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html">
+          <svg
+            xml:space="preserve"
+            width="122"
+            height="54"
+            x="0px"
+            y="0px"
+            class="d-block top-nav-logo"
+            viewBox="0 0 122 54"
+          >
+            <title>bKash Logo</title>
+            <style type="text/css">
+              .st0 {
+                fill: #fff;
+              }
+            </style>
+            <polygon
+              points="82.6,26.2 85.9,40.8 107.3,30.1"
+              class="st0"
+            ></polygon>
+            <polygon
+              points="88.7,4.1 82.8,25.3 106.8,29.1"
+              class="st0"
+            ></polygon>
+            <polygon points="62.4,0.9 88,4 82,25.8" class="st0"></polygon>
+            <polygon points="62.2,5.1 65.2,5.1 73.2,15.4" class="st0"></polygon>
+            <polygon
+              points="108.1,29.9 100.6,19.6 112.6,17.3"
+              class="st0"
+            ></polygon>
+            <polygon
+              points="106.8,32.8 107.6,30.6 88.8,40.2"
+              class="st0"
+            ></polygon>
+            <polygon points="82.1,26.6 86,44.3 74.3,53.7" class="st0"></polygon>
+            <polygon
+              points="111.5,22.6 118.4,22.6 113.3,17.5"
+              class="st0"
+            ></polygon>
+            <path
+              d="M2.8 19.5c.3 0 .7.2 1 .2s.7 0 1-.2v10.9c1.1-1.8 2.4-3.1 4.4-3.1 3.6 0 5.2 3.6 5.2 6.9 0 3.9-2.1 7.7-5.7 7.7-2.1 0-3.1-1.3-3.6-2.1-.7.5-1.1 1.1-1.8 1.8H2.8C2.8 41.5 2.8 19.5 2.8 19.5zM5 35.6C5 38.9 6.3 41 8.6 41c2.9 0 3.8-3.9 3.8-6.7 0-3.3-1-5.7-3.6-5.7C5.8 28.6 5 32.2 5 35.6M24.1 26.6l-2.1 2.8c2.1 2.9 4.2 5.9 6.2 9l2.1 3.3v.2c-.5 0-1-.2-1.5-.2-.5 0-1 0-1.5.2-.5-1-1.1-2-1.8-2.9L20 30.6c-.2-.2-.5-.2-.5-.2v11.4c-.5 0-.8-.2-1.1-.2s-.8 0-1.1.2V19.5c.3 0 .8.2 1.1.2s.7 0 1.1-.2v10.1c0 .2.3 0 .7-.2.5-.5 1-1.1 1.3-1.6l6.4-8.3c.3 0 .7.2 1 .2.3 0 .7 0 1-.2L24.1 26.6zM40.9 39.4c0 1.1 0 1.8 1.5 1.3v.7c-.2.2-.5.2-.8.3-1.3.3-2.4 0-2.6-1.8l-.2.3c-1.1 1.3-2.3 2-3.8 2-1.8 0-3.4-1.5-3.4-3.6 0-3.4 2.3-3.8 4.7-4.2 2-.3 2.8-.5 2.8-2 0-2.1-1.1-3.4-2.9-3.4s-2.9 1.5-3.1 2.1h-.3v-1.6c1.3-1 2.6-1.6 4.1-1.6 2.6 0 4.1 1.6 4.1 4.9C40.9 32.7 40.9 39.4 40.9 39.4zM38.9 34.5l-1 .2c-1.8.3-4.4.7-4.4 3.4 0 1.8 1 2.8 2.4 2.8.7 0 1.6-.5 2.1-1.1.2-.2.7-.7.7-1v-4.2H38.9zM45.4 38.9c.7 1.1 1.8 2.1 2.9 2.1 1.3 0 2.4-1.1 2.4-2.8 0-3.9-6-1.5-6-6.5 0-2.8 1.8-4.4 4.2-4.4 1.3 0 2.4.5 2.9.8-.3.7-.5 1.3-.7 2.1h-.2c-.3-.8-1.3-1.8-2.1-1.8-1.3 0-2.3.8-2.3 2.4 0 3.8 6 1.8 6 6.5 0 3.1-2.4 4.7-4.7 4.7-1 0-2.3-.3-3.3-1 .2-.7.5-1.5.5-2.1h.2V38.9zM56 19.5c.3 0 .7.2 1 .2.3 0 .7 0 1-.2v10.8c.8-1.8 2.3-2.9 4.1-2.9 2.9 0 4.1 2 4.1 5.7v8.5c-.3 0-.7-.2-1-.2s-.7 0-1 .2v-7.8c0-3.3-.7-4.9-2.8-4.9-2.3 0-3.4 1.6-3.4 4.7v8c-.3 0-.7-.2-1-.2-.3 0-.7 0-1 .2C56 41.5 56 19.5 56 19.5z"
+              class="st0"
+            ></path>
+          </svg>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse d-flex flex-row-reverse"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav text-light">
+            <li class="nav-item active">
+              <a class="nav-link text-light" href="#"
+                ><span class="a_span">Campaigns</span>
+              </a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-light"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="a_span"
+                  >Services <i class="fa-solid fa-chevron-down ms-1"></i
+                ></span>
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link menu-item text-light" href="#"
+                ><span class="a_span">Business</span></a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-light"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="a_span">
+                  Help <i class="fa-solid fa-chevron-down ms-1"></i
+                ></span>
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">
+                <span class="a_span">Career</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#"
+                ><span class="a_span">About</span></a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#"
+                ><span class="a_span">Blog</span></a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-light" href="students.html" target="_self"
+                ><span class="a_span">Student</span></a
+              >
+            </li>
+
+            <ul
+              class="nav_app_btn navbar-nav justify-content-end flex-grow-1 align-items-stretch align-items-xl-center"
+            >
+              <li class="nav_app_a1 nav-item">
+                <button class="nav_app_a nav-link text-nowrap">
+                  bKash App
+                </button>
+              </li>
+
+              <li class="lan nav-item d-none d-xl-block text-nowrap ms-1">
+                <div
+                  class="lan_child d-flex btn-sm rounded-pill shadow-none text-white lang-switcher lang-switcher-en en-lang"
+                >
+                  <span class="eng"> Eng </span>
+                  <span class="line"></span>
+                  <span class="bng"> বাংলা</span>
+                </div>
+              </li>
+            </ul>
+          </ul>
+        </div>
+      </nav>
+    </section>
+
+    <!---------- main section ---------->
+    <main class="">
+      <section class="pt-2 pt-md-2">
+        <div class="container">
+          <h2 class="text-center pb-1 pb-md-2">Find Your Offer</h2>
+
+          <div class="row justify-content-center">
+            <div class="col-10 col-lg-8">
+              <form method="GET" action="#" class="pb-1 pb-md-2 mb-half">
+                <div class="input-group">
+                  <input
+                    class="form-control"
+                    type="search"
+                    placeholder="Search by Keyword"
+                    aria-label="Search by Keyword"
+                    id="search"
+                    name="query"
+                    autocomplete="off"
+                  />
+                  <button
+                    class="btn px-1 py-0 lh-1 bg-light text-primary"
+                    type="submit"
+                    id="campaign-search-btn"
+                    style="border-color: #d8d8d8"
+                  >
+                    <span class="visually-hidden">Search</span>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </div>
+              </form>
+
+              <div
+                class="row align-items-center justify-content-center justify-content-md-start g-half g-md-1"
+              >
+                <div
+                  class="col-12 col-md-auto text-center text-md-start text-dark me-1 text-nowrap"
+                >
+                  Popular Searches:
+                </div>
+
+                <!-- search batton -->
+                <div class="col-auto">
+                  <a href="#" class="ser-btn btn-xs rounded-pill">
+                    Puja Celebration with bKash Payment
+                  </a>
+                </div>
+
+                <div class="col-auto">
+                  <a href="#" class="ser-btn btn-xs rounded-pill"> Payment </a>
+                </div>
+
+                <div class="col-auto">
+                  <a href="#" class="ser-btn btn-xs rounded-pill">
+                    Online Payment
+                  </a>
+                </div>
+
+                <div class="col-auto">
+                  <a href="#" class="ser-btn btn-xs rounded-pill"> Travel </a>
+                </div>
+
+                <div class="col-auto">
+                  <a href="#" class="ser-btn btn-xs rounded-pill">
+                    Mobile Recharge
+                  </a>
+                </div>
+
+                <div class="col-auto">
+                  <a href="#" class="ser-btn btn-xs rounded-pill">
+                    Microfinance
+                  </a>
+                </div>
+
+                <div class="col-auto">
+                  <a href="#" class="ser-btn btn-xs rounded-pill">
+                    Health Care
+                  </a>
+                </div>
+
+                <div class="col-auto">
+                  <a href="#" class="ser-btn btn-xs rounded-pill">
+                    Restaurant
+                  </a>
+                </div>
+
+                <div class="col-auto">
+                  <a href="#" class="ser-btn btn-xs rounded-pill"> Cashout </a>
+                </div>
+
+                <div class="col-auto">
+                  <a href="#" class="ser-btn btn-xs rounded-pill">
+                    Add Money
+                  </a>
+                </div>
+
+                <div class="col-auto">
+                  <a href="#" class="ser-btn btn-xs rounded-pill"> Wedding </a>
+                </div>
+
+                <div class="col-auto">
+                  <a href="#" class="ser-btn btn-xs rounded-pill">
+                    Education Fee
+                  </a>
+                </div>
+
+                <div class="col-auto">
+                  <a href="#" class="ser-btn btn-xs rounded-pill">
+                    Remittance
+                  </a>
+                </div>
+
+                <div class="col-auto">
+                  <a href="#" class="ser-btn btn-xs rounded-pill">
+                    Education Fee
+                  </a>
+                </div>
+
+                <div class="col-auto">
+                  <a href="#" class="ser-btn btn-xs rounded-pill">
+                    Credit Card Bill
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+
