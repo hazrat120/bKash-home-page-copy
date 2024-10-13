@@ -25,8 +25,6 @@ var swiper = new Swiper(".mySwiper", {
     },
     slideChange: function () {
       const activeIndex = swiper.activeIndex;
-      console.log("Current active slide index:", swiper.realIndex);
-      console.log("Current real index:", swiper.realIndex);
       const headText = document.getElementsByClassName("haed_text");
 
       for (let item of headText) {
@@ -109,3 +107,23 @@ function mokeupSlide() {
 }
 
 mokeupSlide();
+
+// for service dropdown
+
+function serviceDropdown() {
+  const dropdown = document.querySelector(".service-dropdown");
+  const serviceHover = document.querySelector(".services");
+
+  serviceHover.addEventListener("mouseover", () => {
+    dropdown.style.display = "block";
+  });
+
+  document.addEventListener("mouseover", (event) => {
+    const { target } = event;
+    if (!(dropdown.contains(target) || serviceHover.contains(target))) {
+      dropdown.style.display = "none";
+    }
+  });
+}
+
+serviceDropdown();

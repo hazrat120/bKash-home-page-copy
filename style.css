@@ -87,6 +87,40 @@ html {
   margin-top: var(--bs-dropdown-spacer);
 }
 
+.dropdown-control {
+  background-color: white;
+  z-index: 1020;
+  width: 100%;
+  left: 0;
+  display: none;
+  right: 0;
+}
+
+#navbarNavDropdown {
+  height: 54px;
+}
+
+/* .dropdrown-hover:hover dropdown-control {
+  display: block;
+} */
+
+.navbar-brand {
+  padding: 0 0 !important;
+}
+
+.nav-item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .nav-link {
   position: relative;
 }
