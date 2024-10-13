@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Students</title>
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <title>bKash campaings</title>
 
     <!-- fontaswome cdn -->
     <link
@@ -23,12 +22,12 @@
 
     <!--------- Animation css cdn ------->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="bootstrapfile/bootstrap.min.css" />
+    <link rel="stylesheet" href="/bootstrapfile/bootstrap.min.css" />
 
-    <script src="bootstrapfile/bootstrap.bundle.min.js"></script>
+    <script src="/bootstrapfile/bootstrap.bundle.min.js"></script>
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="student.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="campaings.css" />
   </head>
   <body>
     <!-------------- Navbar ------------>
@@ -38,11 +37,11 @@
           <svg
             xml:space="preserve"
             width="122"
-            height="54"
+            height="50"
             x="0px"
             y="0px"
             class="d-block top-nav-logo"
-            viewBox="0 0 122 54"
+            viewBox="0 0 122 50"
           >
             <title>bKash Logo</title>
             <style type="text/css">
@@ -98,14 +97,14 @@
         >
           <ul class="navbar-nav text-light">
             <li class="nav-item active">
-              <a class="nav-link text-light" href="campaings.html"
+              <a class="nav-link text-light" href="/campaings/campaings.html"
                 ><span class="a_span">Campaigns</span>
               </a>
             </li>
 
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown services">
               <a
-                class="nav-link dropdown-toggle text-light"
+                class="nav-link dropdown-toggle text-light dropdrown-hover"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -115,18 +114,13 @@
                   >Services <i class="fa-solid fa-chevron-down ms-1"></i
                 ></span>
               </a>
-              <div
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link menu-item text-light" href="business.css"
+              <a
+                class="nav-link menu-item text-light"
+                href="/business/business.html"
+                target="_self"
                 ><span class="a_span">Business</span></a
               >
             </li>
@@ -172,7 +166,10 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link text-light" href="students.html"
+              <a
+                class="nav-link text-light"
+                href="/student/students.html"
+                target="_self"
                 ><span class="a_span">Student</span></a
               >
             </li>
@@ -200,117 +197,781 @@
         </div>
       </nav>
     </section>
+    <!--------- Navbar dropown code ---------->
+    <div
+      class="dropdown-control service-dropdown position-fixed rounded-0 border-0 shadow-sm mt-0bg-light"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-10">
+            <div class="row py-4 g-2">
+              <div class="py-2 col-sm-3 col-5">
+                <a
+                  class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                  href="#"
+                >
+                  <img
+                    src="/images/nav_icons/add-money.webp"
+                    alt="send money"
+                    width="35"
+                    height="35"
+                  />
+                  <span class="ms-1">Send Money</span>
+                </a>
+              </div>
 
-    <main class="px-3">
-      <!----------- heading container ------------>
-      <section id="student-heading">
-        <div class="row student-container">
-          <div class="col-12">
-            <h2 class="stu-head-tex">bKash Student Account</h2>
+              <div class="py-2 col-sm-3 col-5">
+                <a
+                  class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                  href="#"
+                >
+                  <img
+                    src="/images/nav_icons/mobile_rechars.webp"
+                    alt="Mobile Recharge"
+                    width="35"
+                    height="35"
+                  />
+                  <span class="ms-1">Mobile Recharge</span>
+                </a>
+              </div>
+
+              <div class="py-2 col-sm-3 col-5">
+                <a
+                  class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                  href="#"
+                >
+                  <img
+                    src="/images/nav_icons/payment.webp"
+                    alt="Payment"
+                    width="35"
+                    height="35"
+                  />
+                  <span class="ms-1">Payment</span>
+                </a>
+              </div>
+
+              <div class="py-2 col-sm-3 col-5">
+                <a
+                  class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                  href="#"
+                >
+                  <img
+                    src="/images/nav_icons/cash-out.webp"
+                    alt="Cash Out"
+                    width="35"
+                    height="35"
+                  />
+                  <span class="ms-1">Cash Out</span>
+                </a>
+              </div>
+
+              <div class="py-2 col-sm-3 col-5">
+                <a
+                  class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                  href="#"
+                >
+                  <img
+                    src="/images/nav_icons/add-money.webp"
+                    alt="Add Money"
+                    width="35"
+                    height="35"
+                  />
+                  <span class="ms-1">Add Money</span>
+                </a>
+              </div>
+
+              <div class="py-2 col-sm-3 col-5">
+                <a
+                  class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                  href="#"
+                >
+                  <img
+                    src="/images/nav_icons/pay-bill.webp"
+                    alt="Pay Bill"
+                    width="35"
+                    height="35"
+                  />
+                  <span class="ms-1">Pay Bill</span>
+                </a>
+              </div>
+
+              <div class="py-2 col-sm-3 col-5">
+                <a
+                  class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                  href="#"
+                >
+                  <img
+                    src="/images/nav_icons/savings-icon-web.webp"
+                    alt="Savings"
+                    width="35"
+                    height="35"
+                  />
+                  <span class="ms-1">Savings</span>
+                </a>
+              </div>
+
+              <div class="py-2 col-sm-3 col-5">
+                <a
+                  class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                  href=""
+                >
+                  <img
+                    src="/images/nav_icons/loan.webp"
+                    alt="Loan Service"
+                    width="35"
+                    height="35"
+                  />
+                  <span class="ms-1">Loan</span>
+                </a>
+              </div>
+
+              <div class="py-2 col-sm-3 col-5">
+                <a
+                  class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                  href="#"
+                >
+                  <img
+                    src="/images/nav_icons/transfer-money.webp"
+                    alt="bKash to Bank"
+                    width="35"
+                    height="35"
+                  />
+                  <span class="ms-1">bKash to Bank</span>
+                </a>
+              </div>
+
+              <div class="py-2 col-sm-3 col-5">
+                <a
+                  class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                  href="#"
+                >
+                  <img
+                    src="/images/nav_icons/rq-140px-x-140px.webp"
+                    alt="Request Money"
+                    width="35"
+                    height="35"
+                  />
+                  <span class="ms-1">Request Money</span>
+                </a>
+              </div>
+
+              <div class="py-2 col-sm-3 col-5">
+                <a
+                  class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                  href="#"
+                >
+                  <img
+                    src="/images/nav_icons/remittance.webp"
+                    alt="Remittance"
+                    width="35"
+                    height="35"
+                  />
+                  <span class="ms-1">Remittance</span>
+                </a>
+              </div>
+
+              <div class="py-2 col-sm-3 col-5">
+                <a
+                  class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                  href="#"
+                >
+                  <img
+                    src="/images/nav_icons/NGO.webp"
+                    alt="Microfinance"
+                    width="35"
+                    height="35"
+                  />
+                  <span class="ms-1">Microfinance</span>
+                </a>
+              </div>
+
+              <div class="py-2 col-sm-3 col-5">
+                <a
+                  class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                  href="#"
+                >
+                  <img
+                    src="/images/nav_icons/education.webp"
+                    alt="Education Fee"
+                    width="35"
+                    height="35"
+                  />
+                  <span class="ms-1">Education Fee</span>
+                </a>
+              </div>
+
+              <div class="py-2 col-sm-3 col-5">
+                <a
+                  class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                  href="#"
+                >
+                  <img
+                    src="/images/nav_icons/donation.webp"
+                    alt="Donation Icon"
+                    width="35"
+                    height="35"
+                  />
+                  <span class="ms-1">Donation</span>
+                </a>
+              </div>
+
+              <div class="py-2 col-sm-3 col-5">
+                <a
+                  class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                  href=""
+                >
+                  <img
+                    src="/images/nav_icons/insurance.webp"
+                    alt="Insurance"
+                    width="35"
+                    height="35"
+                  />
+                  <span class="ms-1">Insurance</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---------- main section ---------->
+    <main class="">
+      <!-- Find your offer -->
+      <section
+        class=""
+        style="background: linear-gradient(#ffeff6, #fff); padding-top: 32px"
+      >
+        <div class="container">
+          <h2 class="text-center pb-3 pb-md-4">Find Your Offer</h2>
+
+          <div class="row justify-content-center">
+            <div class="col-10 col-lg-8">
+              <form
+                method="GET"
+                action="#"
+                class="inp-form pb-1 pb-md-2 mb-half"
+              >
+                <div class="input-group">
+                  <input
+                    class="form-control"
+                    type="search"
+                    placeholder="Search by Keyword"
+                    aria-label="Search by Keyword"
+                    id="search"
+                    name="query"
+                    autocomplete="off"
+                  />
+                  <button
+                    class="input-serc-btn btn py-0 lh-1 bg-light text-primary"
+                    type="submit"
+                    id="campaign-search-btn"
+                    style="border-color: #d8d8d8"
+                  >
+                    <span class="visually-hidden">Search</span>
+                    <i class="input-icon fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </div>
+              </form>
+
+              <div
+                class="row align-items-center justify-content-center justify-content-md-start g-half g-md-1"
+              >
+                <div
+                  class="col-12 col-md-auto text-center text-md-start text-dark me-lg-5 text-nowrap"
+                >
+                  Popular Searches:
+                </div>
+
+                <!-- search batton -->
+                <div class="col-auto">
+                  <a href="#" class="ser-btn btn-xs rounded-pill">
+                    Puja Celebration with bKash Payment
+                  </a>
+                </div>
+
+                <div class="col-auto">
+                  <a href="#" class="ser-btn btn-xs rounded-pill"> Payment </a>
+                </div>
+
+                <div class="col-auto">
+                  <a href="#" class="ser-btn btn-xs rounded-pill">
+                    Online Payment
+                  </a>
+                </div>
+
+                <div class="col-auto">
+                  <a href="#" class="ser-btn btn-xs rounded-pill"> Travel </a>
+                </div>
+
+                <div class="col-auto">
+                  <a href="#" class="ser-btn btn-xs rounded-pill">
+                    Mobile Recharge
+                  </a>
+                </div>
+
+                <div class="col-auto">
+                  <a href="#" class="ser-btn btn-xs rounded-pill">
+                    Microfinance
+                  </a>
+                </div>
+
+                <div class="col-auto">
+                  <a href="#" class="ser-btn btn-xs rounded-pill">
+                    Health Care
+                  </a>
+                </div>
+
+                <div class="col-auto">
+                  <a href="#" class="ser-btn btn-xs rounded-pill">
+                    Restaurant
+                  </a>
+                </div>
+
+                <div class="col-auto">
+                  <a href="#" class="ser-btn btn-xs rounded-pill"> Cashout </a>
+                </div>
+
+                <div class="col-auto">
+                  <a href="#" class="ser-btn btn-xs rounded-pill">
+                    Add Money
+                  </a>
+                </div>
+
+                <div class="col-auto">
+                  <a href="#" class="ser-btn btn-xs rounded-pill"> Wedding </a>
+                </div>
+
+                <div class="col-auto">
+                  <a href="#" class="ser-btn btn-xs rounded-pill">
+                    Education Fee
+                  </a>
+                </div>
+
+                <div class="col-auto">
+                  <a href="#" class="ser-btn btn-xs rounded-pill">
+                    Remittance
+                  </a>
+                </div>
+
+                <div class="col-auto">
+                  <a href="#" class="ser-btn btn-xs rounded-pill">
+                    Education Fee
+                  </a>
+                </div>
+
+                <div class="col-auto">
+                  <a href="#" class="ser-btn btn-xs rounded-pill">
+                    Credit Card Bill
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <!----- text container ------>
-
-      <section class="text-section">
-        <div class="student-container">
-          <div class="row">
-            <div class="col-12 student-account-text">
-              <p class="stude-accou-btn">
-                <a href="#" class="btn btn_outline">Download Now</a>
+      <!---------- offer 1 ----------->
+      <section id="offer" class="same-card-container">
+        <div class="container">
+          <div
+            class="row justify-content-center justify-content-lg-between align-items-center pt-4 pt-md-4 mt-md-4"
+          >
+            <div class="col-12 col-lg-4 text-center text-lg-start px-3">
+              <h2 class="pb-3 fw-semibold mb-2 mb-half">
+                Puja Celebration with bKash Payment
+              </h2>
+              <p class="pb-3 mb-4 d-none d-lg-block">
+                This Puja Style Yourself to your Heart’s Desire with bKash
+                Offers
               </p>
+              <a
+                href="#"
+                class="btn btn_outline rounded-pill d-none d-lg-inline-block"
+                >View More Offers</a
+              >
+            </div>
 
-              <p class="student-text-iframe">
-                <iframe
-                  width="100%"
-                  height="315"
-                  src="https://www.youtube.com/embed/jod92YkXBfA?si=hCsnk5Nup_klr40a"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
-                With birth certificate, open bKash student account within
-                minute, And welcome offer is here for you, up to ৳130!!
-              </p>
+            <div class="col-10 col-lg-7 px-3">
+              <div class="row off-card-wrapper">
+                <div class="col-12">
+                  <a href="#" class="card shadow offer-preview-card text-body">
+                    <img
+                      src="/images/campaings_imgs/discount-50.jpg"
+                      class="card-img-top d-none d-md-block"
+                      alt="Offer img"
+                      style="aspect-ratio: 27 / 10"
+                    />
 
-              <p><br />Want to pay in a smart way?</p>
-              <p>Recharge or send money - want everything instantly?</p>
-              <p>Want to open an account but do not have a NID?</p>
-              <p>
-                Now there is a great news for every students across the country!
-              </p>
+                    <div class="card-body">
+                      <h5 class="card-title fs-5 fw-bold mb-0">
+                        Offer on Online Puja Shopping
+                      </h5>
+                      <p class="card-text">
+                        <small class="text-muted" style="font-size: 12px"
+                          >Offer on Online Puja Shopping via SSLCOMMERZ</small
+                        >
+                      </p>
+                    </div>
+                  </a>
+                </div>
 
-              <p>
-                From now under 14 to 18 years of age customers like you can open
-                bKash Student Account very easily. All you need is digital birth
-                certificate and mother/father's active bKash Account number!
-              </p>
+                <div class="col-md">
+                  <a href="#" class="card shadow offer-preview-card text-body">
+                    <img
+                      src="/images/campaings_imgs/cupon-code-s10.jpg"
+                      class="card-img-top aspect-4x3"
+                      alt="Puja offer"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title mb-0">Puja Superstore Offer</h5>
+                      <p class="card-text">
+                        <small class="text-muted" style="font-size: 12px"
+                          >bKash Payment Offer at Superstores this Puja</small
+                        >
+                      </p>
+                    </div>
+                  </a>
+                </div>
 
-              <p>
-                So why the delay? Open a student account at bKash today!<br /><br />⚠️<span
-                  style="color: #e03e2d"
-                  ><strong
-                    >5 things you must consider while opening a bKash student
-                    account</strong
-                  ></span
-                ><br />1. Photo of Birth Certificate must be clear<br />2. Name,
-                date of birth and birth certificate number will be fetched from
-                the photo of Birth Certificate, and this information must be
-                matched with the information in the bKash App, if necessary,
-                changes should be made according to the birth certificate<br />3.
-                The name of mother or father who is to be selected as the parent
-                should be matched with the birth certificate, and if necessary,
-                changes should be made according to the birth certificate<br />4.
-                bKash number must be in the name of mother or father who is to
-                be selected as the parent<br />5. Proper self-portrait should be
-                taken standing in front of proper lighting and wearing
-                appropriate and modest dress
-              </p>
+                <div class="col-md">
+                  <a href="#" class="card shadow offer-preview-card text-body">
+                    <img
+                      src="/images/campaings_imgs/minimum-500-payment.jpg"
+                      class="card-img-top aspect-4x3"
+                      alt="Online Puja offer"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title mb-0">
+                        Online Puja Shopping Offer!
+                      </h5>
+                      <p class="card-text">
+                        <small class="text-muted" style="font-size: 12px"
+                          >Tk 200 Cashback Offer on your Online Puja
+                          Shopping</small
+                        >
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-              <p>
-                <a href="#"
-                  ><img
-                    class="w-100 h-100"
-                    src="images/student-registration-step.jpeg"
-                    alt=""
-                    width="1600"
-                    height="900"
-                /></a>
+      <!---------- offer 2 ----------->
+      <section id="offer" class="same-card-container offer-container2">
+        <div class="container">
+          <div
+            class="row justify-content-center justify-content-lg-between align-items-center pt-4 pt-md-4 mt-md-4"
+          >
+            <div class="col-12 col-lg-4 text-center text-lg-start px-3">
+              <h2 class="pb-3 fw-semibold mb-2 mb-half">
+                Puja Celebration with bKash Payment
+              </h2>
+              <p class="pb-3 mb-4 d-none d-lg-block">
+                This Puja Style Yourself to your Heart’s Desire with bKash
+                Offers
               </p>
+              <a
+                href="#"
+                class="btn btn_outline rounded-pill d-none d-lg-inline-block"
+                >View More Offers</a
+              >
+            </div>
 
-              <p>
-                <a href="#"
-                  ><img
-                    class="w-100 h-100"
-                    src="images/offer-updated-under-.jpg"
-                    alt=""
-                    width="1600"
-                    height="900"
-                /></a>
-              </p>
+            <div class="col-10 col-lg-7 px-3">
+              <div class="row off-card-wrapper">
+                <div class="col-12">
+                  <a href="#" class="card shadow offer-preview-card text-body">
+                    <img
+                      src="/images/campaings_imgs/mega-campaign-home-applience.jpg"
+                      class="card-img-top d-none d-md-block"
+                      alt="Offer img"
+                      style="aspect-ratio: 27 / 10"
+                    />
 
-              <p>
-                <strong
-                  ><a href="#" style="color: #e2136e"
-                    >bKash Student Account Terms and Conditions &gt;&gt;</a
-                  ></strong
-                ><br /><br /><strong
-                  ><a href="#" style="color: #e2136e"
-                    >Offer Details &gt;&gt;</a
-                  ></strong
-                >
-              </p>
+                    <div class="card-body">
+                      <h5 class="card-title fs-5 fw-bold mb-0">
+                        Offer on Online Puja Shopping
+                      </h5>
+                      <p class="card-text">
+                        <small class="text-muted" style="font-size: 12px"
+                          >Offer on Online Puja Shopping via SSLCOMMERZ</small
+                        >
+                      </p>
+                    </div>
+                  </a>
+                </div>
 
-              <p>
-                <strong
-                  ><a href="#" style="color: #e2136e"
-                    >Frequently Asked Questions &gt;&gt;</a
-                  ></strong
-                >
+                <div class="col-md">
+                  <a href="#" class="card shadow offer-preview-card text-body">
+                    <img
+                      src="/images/campaings_imgs/medicen-cashback.jpg"
+                      class="card-img-top aspect-4x3"
+                      alt="Puja offer"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title mb-0">Puja Superstore Offer</h5>
+                      <p class="card-text">
+                        <small class="text-muted" style="font-size: 12px"
+                          >bKash Payment Offer at Superstores this Puja</small
+                        >
+                      </p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-md">
+                  <a href="#" class="card shadow offer-preview-card text-body">
+                    <img
+                      src="/images/campaings_imgs/resturent-payment.jpg"
+                      class="card-img-top aspect-4x3"
+                      alt="Online Puja offer"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title mb-0">
+                        Online Puja Shopping Offer!
+                      </h5>
+                      <p class="card-text">
+                        <small class="text-muted" style="font-size: 12px"
+                          >Tk 200 Cashback Offer on your Online Puja
+                          Shopping</small
+                        >
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!---------- offer 3 ----------->
+      <section id="offer" class="same-card-container offer-container2">
+        <div class="container">
+          <div
+            class="row justify-content-center justify-content-lg-between align-items-center pt-4 pt-md-4 mt-md-4"
+          >
+            <div class="col-12 col-lg-4 text-center text-lg-start px-3">
+              <h2 class="pb-3 fw-semibold mb-2 mb-half">
+                Puja Celebration with bKash Payment
+              </h2>
+              <p class="pb-3 mb-4 d-none d-lg-block">
+                This Puja Style Yourself to your Heart’s Desire with bKash
+                Offers
               </p>
+              <a
+                href="#"
+                class="btn btn_outline rounded-pill d-none d-lg-inline-block"
+                >View More Offers</a
+              >
+            </div>
+
+            <div class="col-10 col-lg-7 px-3">
+              <div class="row off-card-wrapper">
+                <div class="col-12">
+                  <a href="#" class="card shadow offer-preview-card text-body">
+                    <img
+                      src="/images/campaings_imgs/live-shoping.jpg"
+                      class="card-img-top d-none d-md-block"
+                      alt="Offer img"
+                      style="aspect-ratio: 27 / 10"
+                    />
+
+                    <div class="card-body">
+                      <h5 class="card-title fs-5 fw-bold mb-0">
+                        Offer on Online Puja Shopping
+                      </h5>
+                      <p class="card-text">
+                        <small class="text-muted" style="font-size: 12px"
+                          >Offer on Online Puja Shopping via SSLCOMMERZ</small
+                        >
+                      </p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-md">
+                  <a href="#" class="card shadow offer-preview-card text-body">
+                    <img
+                      src="/images/campaings_imgs/playgame-and-win.jpg"
+                      class="card-img-top aspect-4x3"
+                      alt="Puja offer"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title mb-0">Puja Superstore Offer</h5>
+                      <p class="card-text">
+                        <small class="text-muted" style="font-size: 12px"
+                          >bKash Payment Offer at Superstores this Puja</small
+                        >
+                      </p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-md">
+                  <a href="#" class="card shadow offer-preview-card text-body">
+                    <img
+                      src="/images/campaings_imgs/pickaboo.jpg"
+                      class="card-img-top aspect-4x3"
+                      alt="Online Puja offer"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title mb-0">
+                        Online Puja Shopping Offer!
+                      </h5>
+                      <p class="card-text">
+                        <small class="text-muted" style="font-size: 12px"
+                          >Tk 200 Cashback Offer on your Online Puja
+                          Shopping</small
+                        >
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!---------- offer 4 ----------->
+      <section id="offer" class="same-card-container offer-container2">
+        <div class="container">
+          <div
+            class="row justify-content-center justify-content-lg-between align-items-center pt-4 pt-md-4 mt-md-4"
+          >
+            <div class="col-12 col-lg-4 text-center text-lg-start px-3">
+              <h2 class="pb-3 fw-semibold mb-2 mb-half">
+                Puja Celebration with bKash Payment
+              </h2>
+              <p class="pb-3 mb-4 d-none d-lg-block">
+                This Puja Style Yourself to your Heart’s Desire with bKash
+                Offers
+              </p>
+              <a
+                href="#"
+                class="btn btn_outline rounded-pill d-none d-lg-inline-block"
+                >View More Offers</a
+              >
+            </div>
+
+            <div class="col-10 col-lg-7 px-3">
+              <div class="row off-card-wrapper">
+                <div class="col-12">
+                  <a href="#" class="card shadow offer-preview-card text-body">
+                    <img
+                      src="/images/campaings_imgs/gozayaan.jpg"
+                      class="card-img-top d-none d-md-block"
+                      alt="Offer img"
+                      style="aspect-ratio: 27 / 10"
+                    />
+
+                    <div class="card-body">
+                      <h5 class="card-title fs-5 fw-bold mb-0">
+                        Offer on Online Puja Shopping
+                      </h5>
+                      <p class="card-text">
+                        <small class="text-muted" style="font-size: 12px"
+                          >Offer on Online Puja Shopping via SSLCOMMERZ</small
+                        >
+                      </p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-md">
+                  <a href="#" class="card shadow offer-preview-card text-body">
+                    <img
+                      src="/images/campaings_imgs/air-astra.jpg"
+                      class="card-img-top aspect-4x3"
+                      alt="Puja offer"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title mb-0">Puja Superstore Offer</h5>
+                      <p class="card-text">
+                        <small class="text-muted" style="font-size: 12px"
+                          >bKash Payment Offer at Superstores this Puja</small
+                        >
+                      </p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-md">
+                  <a href="#" class="card shadow offer-preview-card text-body">
+                    <img
+                      src="/images/campaings_imgs/novoair-11.jpg"
+                      class="card-img-top aspect-4x3"
+                      alt="Online Puja offer"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title mb-0">
+                        Online Puja Shopping Offer!
+                      </h5>
+                      <p class="card-text">
+                        <small class="text-muted" style="font-size: 12px"
+                          >Tk 200 Cashback Offer on your Online Puja
+                          Shopping</small
+                        >
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!---------- offer 4 ----------->
+      <section id="offer" class="same-card-container offer-container2">
+        <div class="container">
+          <div
+            class="row justify-content-center justify-content-lg-between align-items-center pt-4 pt-md-4 mt-md-4"
+          >
+            <div class="col-12 col-lg-4 text-center text-lg-start px-3">
+              <h2 class="pb-3 fw-semibold mb-2 mb-half">
+                Puja Celebration with bKash Payment
+              </h2>
+              <p class="pb-3 mb-4 d-none d-lg-block">
+                This Puja Style Yourself to your Heart’s Desire with bKash
+                Offers
+              </p>
+              <a
+                href="#"
+                class="btn btn_outline rounded-pill d-none d-lg-inline-block"
+                >View More Offers</a
+              >
+            </div>
+
+            <div class="col-10 col-lg-7 px-3">
+              <div class="row off-card-wrapper">
+                <div class="col-12">
+                  <a href="#" class="card shadow offer-preview-card text-body">
+                    <img
+                      src="/images/campaings_imgs/bkash-mobile-rechars.jpg"
+                      class="card-img-top d-none d-md-block"
+                      alt="Offer img"
+                      style="aspect-ratio: 27 / 10"
+                    />
+
+                    <div class="card-body">
+                      <h5 class="card-title fs-5 fw-bold mb-0">
+                        Offer on Online Puja Shopping
+                      </h5>
+                      <p class="card-text">
+                        <small class="text-muted" style="font-size: 12px"
+                          >Offer on Online Puja Shopping via SSLCOMMERZ</small
+                        >
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>

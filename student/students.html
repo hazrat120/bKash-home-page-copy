@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
-    <title>business</title>
-    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Students</title>
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     <!-- fontaswome cdn -->
     <link
@@ -23,12 +23,12 @@
 
     <!--------- Animation css cdn ------->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="bootstrapfile/bootstrap.min.css" />
+    <link rel="stylesheet" href="/bootstrapfile/bootstrap.min.css" />
 
-    <script src="bootstrapfile/bootstrap.bundle.min.js"></script>
+    <script src="/bootstrapfile/bootstrap.bundle.min.js"></script>
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="business.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="student.css" />
   </head>
   <body>
     <!-------------- Navbar ------------>
@@ -38,11 +38,11 @@
           <svg
             xml:space="preserve"
             width="122"
-            height="54"
+            height="50"
             x="0px"
             y="0px"
             class="d-block top-nav-logo"
-            viewBox="0 0 122 54"
+            viewBox="0 0 122 50"
           >
             <title>bKash Logo</title>
             <style type="text/css">
@@ -98,14 +98,14 @@
         >
           <ul class="navbar-nav text-light">
             <li class="nav-item active">
-              <a class="nav-link text-light" href="campaings.html"
+              <a class="nav-link text-light" href="/campaings/campaings.html"
                 ><span class="a_span">Campaigns</span>
               </a>
             </li>
 
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown services">
               <a
-                class="nav-link dropdown-toggle text-light"
+                class="nav-link dropdown-toggle text-light dropdrown-hover"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -115,20 +115,12 @@
                   >Services <i class="fa-solid fa-chevron-down ms-1"></i
                 ></span>
               </a>
-              <div
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
             </li>
 
             <li class="nav-item">
               <a
                 class="nav-link menu-item text-light"
-                href="business.html"
+                href="/business/business.html"
                 target="_self"
                 ><span class="a_span">Business</span></a
               >
@@ -175,7 +167,10 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link text-light" href="students.html" target="_self"
+              <a
+                class="nav-link text-light"
+                href="/student/students.html"
+                target="_self"
                 ><span class="a_span">Student</span></a
               >
             </li>
@@ -203,547 +198,354 @@
         </div>
       </nav>
     </section>
-
-    <main>
-      <!------------ Business banner  ------------>
-      <section>
-        <img
-          class="d-none d-md-block object-cover w-100 bg-dark"
-          width="1920px"
-          style="aspect-ratio: 1920 / 500"
-          src="images/Business-Hero-Banner_1920-X.jpg"
-          alt="business banner"
-        />
-        <img
-          class="lazy d-block d-md-none object-cover w-100 aspect-2x1 bg-dark"
-          width="360px"
-          src="images/thumbnail_Business-Hero-Banner_360-X.jpg"
-          alt="business thumbail img"
-        />
-      </section>
-
-      <!----------- Business solutions ------------->
-      <section id="business-solution-container">
-        <div class="container">
-          <div class="row d-flex business-card-wrapper">
-            <div
-              class="busi-card-head d-flex col-6 col-sm-4 col-md-3 col-xl-1-5"
-            >
-              <a
-                href="#"
-                class="card card-a align-items-center text-center bg-transparent shadow-none text-body"
-              >
-                <img
-                  src="images/busness_icons/online-business.webp"
-                  class="img-fluid aspect-1x1"
-                  alt="Online business"
-                  width="110"
-                />
-                <div class="card-body pt-1 pb-0 px-0">
-                  <p class="business-card-text card-title mb-0">
-                    Online Business
-                  </p>
-                </div>
-              </a>
-            </div>
-
-            <div
-              class="busi-card-head d-flex col-6 col-sm-4 col-md-3 col-xl-1-5"
-            >
-              <a
-                href="#"
-                class="card card-a align-items-center text-center bg-transparent shadow-none text-body"
-              >
-                <img
-                  src="images/busness_icons/merchant.webp"
-                  class="img-fluid aspect-1x1"
-                  alt="Online business"
-                  width="110"
-                />
-                <div class="card-body pt-1 pb-0 px-0">
-                  <p class="business-card-text card-title mb-0">
-                    Online Business
-                  </p>
-                </div>
-              </a>
-            </div>
-
-            <div
-              class="busi-card-head d-flex col-6 col-sm-4 col-md-3 col-xl-1-5"
-            >
-              <a
-                href="#"
-                class="card card-a align-items-center text-center bg-transparent shadow-none text-body"
-              >
-                <img
-                  src="images/busness_icons/education-institute.webp"
-                  class="img-fluid aspect-1x1"
-                  alt="Online business"
-                  width="110"
-                />
-                <div class="card-body pt-1 pb-0 px-0">
-                  <p class="business-card-text card-title mb-0">
-                    Online Business
-                  </p>
-                </div>
-              </a>
-            </div>
-
-            <div
-              class="busi-card-head d-flex col-6 col-sm-4 col-md-3 col-xl-1-5"
-            >
-              <a
-                href="#"
-                class="card card-a align-items-center text-center bg-transparent shadow-none text-body"
-              >
-                <img
-                  src="images/busness_icons/01-rmg-&-payroll.webp"
-                  class="img-fluid aspect-1x1"
-                  alt="Online business"
-                  width="110"
-                />
-                <div class="card-body pt-1 pb-0 px-0">
-                  <p class="business-card-text card-title mb-0">
-                    Online Business
-                  </p>
-                </div>
-              </a>
-            </div>
-
-            <div
-              class="busi-card-head d-flex col-6 col-sm-4 col-md-3 col-xl-1-5"
-            >
-              <a
-                href="#"
-                class="card card-a align-items-center text-center bg-transparent shadow-none text-body"
-              >
-                <img
-                  src="images/busness_icons/corporate-_-business.webp"
-                  class="img-fluid aspect-1x1"
-                  alt="Online business"
-                  width="110"
-                />
-                <div class="card-body pt-1 pb-0 px-0">
-                  <p class="business-card-text card-title mb-0">
-                    Online Business
-                  </p>
-                </div>
-              </a>
-            </div>
-
-            <div
-              class="busi-card-head d-flex col-6 col-sm-4 col-md-3 col-xl-1-5"
-            >
-              <a
-                href="#"
-                class="card card-a align-items-center text-center bg-transparent shadow-none text-body"
-              >
-                <img
-                  src="images/busness_icons/NGO.webp"
-                  class="img-fluid aspect-1x1"
-                  alt="Online business"
-                  width="110"
-                />
-                <div class="card-body pt-1 pb-0 px-0">
-                  <p class="business-card-text card-title mb-0">
-                    Online Business
-                  </p>
-                </div>
-              </a>
-            </div>
-
-            <div
-              class="busi-card-head d-flex col-6 col-sm-4 col-md-3 col-xl-1-5"
-            >
-              <a
-                href="#"
-                class="card card-a align-items-center text-center bg-transparent shadow-none text-body"
-              >
-                <img
-                  src="images/busness_icons/07-be-a-supplier.webp"
-                  class="img-fluid aspect-1x1"
-                  alt="Online business"
-                  width="110"
-                />
-                <div class="card-body pt-1 pb-0 px-0">
-                  <p class="business-card-text card-title mb-0">
-                    Online Business
-                  </p>
-                </div>
-              </a>
-            </div>
-
-            <div
-              class="busi-card-head d-flex col-6 col-sm-4 col-md-3 col-xl-1-5"
-            >
-              <a
-                href="#"
-                class="card card-a align-items-center text-center bg-transparent shadow-none text-body"
-              >
-                <img
-                  src="images/busness_icons/08-agent.webp"
-                  class="img-fluid aspect-1x1"
-                  alt="Online business"
-                  width="110"
-                />
-                <div class="card-body pt-1 pb-0 px-0">
-                  <p class="business-card-text card-title mb-0">
-                    Online Business
-                  </p>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- online business -->
-      <section id="online-busines-container">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-11 col-lg-10">
-              <div class="row justify-content-around align-items-center">
-                <div class="col-md text-center mb-2 px-3 mb-md-0 text-md-start">
-                  <h2 class="pb-3 mb-2 fw-medium">Online Business</h2>
-                  <div class="mx-auto text-dark pb-3 mb-2">
-                    bKash provides the easiest and safest method for accepting
-                    online payments from your customers. You will get access to
-                    cutting-edge solutions like payment gateway, tokenized
-                    checkout, subscription payments, instant refunds, direct
-                    charges, B2C payout, and APIs.
-                  </div>
-                  <a href="#" class="btn btn_outline rounded-pill">Sign Up</a>
-                </div>
-
-                <div class="col order-md-last text-center px-3">
-                  <img
-                    src="images/business-img/online-business.webp"
-                    class="img-fluid business-section-thumb aspect-1x1"
-                    alt="Online business"
-                    width="320"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- marcent business -->
-      <section id="online-busines-container business-white">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-11 col-lg-10">
-              <div class="row justify-content-around align-items-center">
-                <div class="col-md text-center mb-2 px-3 mb-md-0 text-md-start">
-                  <h2 class="pb-3 mb-2 fw-medium">Merchant</h2>
-                  <div class="mx-auto text-dark pb-3 mb-2">
-                    bKash provides the easiest and safest method for accepting
-                    online payments from your customers. You will get access to
-                    cutting-edge solutions like payment gateway, tokenized
-                    checkout, subscription payments, instant refunds, direct
-                    charges, B2C payout, and APIs.
-                  </div>
-                  <a href="#" class="btn btn_outline rounded-pill">Sign Up</a>
-                </div>
-
-                <div class="col order-md-first text-center px-3">
-                  <img
-                    src="images/business-img/merchant.webp"
-                    class="img-fluid business-section-thumb aspect-1x1"
-                    alt="Online business"
-                    width="320"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Education business -->
-      <section id="online-busines-container">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-11 col-lg-10">
-              <div class="row justify-content-around align-items-center">
-                <div class="col-md text-center mb-2 px-3 mb-md-0 text-md-start">
-                  <h2 class="pb-3 mb-2 fw-medium">Educational Institutions</h2>
-                  <div class="mx-auto text-dark pb-3 mb-2">
-                    bKash provides the easiest and safest method for accepting
-                    online payments from your customers. You will get access to
-                    cutting-edge solutions like payment gateway, tokenized
-                    checkout, subscription payments, instant refunds, direct
-                    charges, B2C payout, and APIs.
-                  </div>
-                  <a href="#" class="btn btn_outline rounded-pill">Sign Up</a>
-                </div>
-
-                <div class="col order-md-last text-center px-3">
-                  <img
-                    src="images/business-img/education-institute.webp"
-                    class="img-fluid business-section-thumb aspect-1x1"
-                    alt="Online business"
-                    width="320"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Payroll business -->
-      <section id="online-busines-container business-white">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-11 col-lg-10">
-              <div class="row justify-content-around align-items-center">
-                <div class="col-md text-center mb-2 px-3 mb-md-0 text-md-start">
-                  <h2 class="pb-3 mb-2 fw-medium">Payroll</h2>
-                  <div class="mx-auto text-dark pb-3 mb-2">
-                    bKash provides the easiest and safest method for accepting
-                    online payments from your customers. You will get access to
-                    cutting-edge solutions like payment gateway, tokenized
-                    checkout, subscription payments, instant refunds, direct
-                    charges, B2C payout, and APIs.
-                  </div>
-                  <a href="#" class="btn btn_outline rounded-pill">Sign Up</a>
-                </div>
-
-                <div class="col order-md-first text-center px-3">
-                  <img
-                    src="images/business-img/rmg-&-payroll.webp"
-                    class="img-fluid business-section-thumb aspect-1x1"
-                    alt="Online business"
-                    width="320"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Corporate & Enterprise  -->
-      <section id="online-busines-container">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-11 col-lg-10">
-              <div class="row justify-content-around align-items-center">
-                <div class="col-md text-center mb-2 px-3 mb-md-0 text-md-start">
-                  <h2 class="pb-3 mb-2 fw-medium">Corporate & Enterprise</h2>
-                  <div class="mx-auto text-dark pb-3 mb-2">
-                    bKash provides the easiest and safest method for accepting
-                    online payments from your customers. You will get access to
-                    cutting-edge solutions like payment gateway, tokenized
-                    checkout, subscription payments, instant refunds, direct
-                    charges, B2C payout, and APIs.
-                  </div>
-                  <a href="#" class="btn btn_outline rounded-pill">Sign Up</a>
-                </div>
-
-                <div class="col order-md-last text-center px-3">
-                  <img
-                    src="images/business-img/corporate-_-business.webp"
-                    class="img-fluid business-section-thumb aspect-1x1"
-                    alt="Online business"
-                    width="320"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Microfinance  -->
-      <section id="online-busines-container business-white">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-11 col-lg-10">
-              <div class="row justify-content-around align-items-center">
-                <div class="col-md text-center mb-2 px-3 mb-md-0 text-md-start">
-                  <h2 class="pb-3 mb-2 fw-medium">Microfinance</h2>
-                  <div class="mx-auto text-dark pb-3 mb-2">
-                    bKash provides the easiest and safest method for accepting
-                    online payments from your customers. You will get access to
-                    cutting-edge solutions like payment gateway, tokenized
-                    checkout, subscription payments, instant refunds, direct
-                    charges, B2C payout, and APIs.
-                  </div>
-                  <a href="#" class="btn btn_outline rounded-pill">Sign Up</a>
-                </div>
-
-                <div class="col order-md-first text-center px-3">
-                  <img
-                    src="images/business-img/NGO.webp"
-                    class="img-fluid business-section-thumb aspect-1x1"
-                    alt="Online business"
-                    width="320"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Microfinance  -->
-      <section id="online-busines-container">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-11 col-lg-10">
-              <div class="row justify-content-around align-items-center">
-                <div class="col-md text-center mb-2 px-3 mb-md-0 text-md-start">
-                  <h2 class="pb-3 mb-2 fw-medium">Supplier</h2>
-                  <div class="mx-auto text-dark pb-3 mb-2">
-                    bKash provides the easiest and safest method for accepting
-                    online payments from your customers. You will get access to
-                    cutting-edge solutions like payment gateway, tokenized
-                    checkout, subscription payments, instant refunds, direct
-                    charges, B2C payout, and APIs.
-                  </div>
-                  <a href="#" class="btn btn_outline rounded-pill">Sign Up</a>
-                </div>
-
-                <div class="col order-md-last text-center px-3">
-                  <img
-                    src="images/business-img/be-a-supplier.webp"
-                    class="img-fluid business-section-thumb aspect-1x1"
-                    alt="Online business"
-                    width="320"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Agent  -->
-      <section id="online-busines-container business-white">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-11 col-lg-10">
-              <div class="row justify-content-around align-items-center">
-                <div class="col-md text-center mb-2 px-3 mb-md-0 text-md-start">
-                  <h2 class="pb-3 mb-2 fw-medium">Agent</h2>
-                  <div class="mx-auto text-dark pb-3 mb-2">
-                    bKash provides the easiest and safest method for accepting
-                    online payments from your customers. You will get access to
-                    cutting-edge solutions like payment gateway, tokenized
-                    checkout, subscription payments, instant refunds, direct
-                    charges, B2C payout, and APIs.
-                  </div>
-                  <a href="#" class="btn btn_outline rounded-pill">Sign Up</a>
-                </div>
-
-                <div class="col order-md-first text-center px-3">
-                  <img
-                    src="images/business-img/agent.webp"
-                    class="img-fluid business-section-thumb aspect-1x1"
-                    alt="Online business"
-                    width="320"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--------- Whats new Bkash --------->
-      <section id="new-content" style="background-color: #ffeff6">
-        <div class="container">
-          <h2 class="text-center">What's New in bKash</h2>
-
-          <div class="row justify-content-center justify-content-md-start g-1">
-            <div class="col-11 col-md-4 ps-2 p-lg-2">
-              <a href="#" class="new-card-body card blog-card text-body">
-                <div class="aspect-4x3">
-                  <img
-                    src="images/thumbnail-pic-bkash-wins-highest-vat-payer-award.webp"
-                    alt="ima not found"
-                    class="card-img-top"
-                  />
-                </div>
-
-                <div class="card-body pb-0">
-                  <h5
-                    class="card-title fw-medium lh-sm line-clamp-3 mb-0 mb-md-half"
-                  >
-                    bKash receives ‘Fintech Pioneer Award’
-                  </h5>
-                </div>
-
-                <div
-                  class="card-footer pt-0 pb-1 bg-transparent border-0 fs--1 text-muted mb-2"
+    <!--------- Navbar dropown code ---------->
+    <div
+      class="dropdown-control service-dropdown position-fixed rounded-0 border-0 shadow-sm mt-0bg-light"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-10">
+            <div class="row py-4 g-2">
+              <div class="py-2 col-sm-3 col-5">
+                <a
+                  class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                  href="#"
                 >
-                  Posted on 19 August 2024
-                  <span class="px-half px-2">|</span>15 mins read
-                </div>
-              </a>
-            </div>
-
-            <div class="col-11 col-md-4 ps-2 p-lg-2">
-              <a href="#" class="new-card-body card blog-card text-body">
-                <div class="aspect-4x3">
                   <img
-                    src="images/fintech-thumb.webp"
-                    alt="ima not found"
-                    class="card-img-top"
+                    src="/images/nav_icons/transfer-money.webp"
+                    alt="send money"
+                    width="35"
+                    height="35"
                   />
-                </div>
+                  <span class="ms-1">Send Money</span>
+                </a>
+              </div>
 
-                <div class="card-body pb-0">
-                  <h5
-                    class="card-title fw-medium lh-sm line-clamp-3 mb-0 mb-md-half"
-                  >
-                    bKash receives ‘Fintech Pioneer Award’
-                  </h5>
-                </div>
-
-                <div
-                  class="card-footer pt-0 pb-1 bg-transparent border-0 fs--1 text-muted mb-2"
+              <div class="py-2 col-sm-3 col-5">
+                <a
+                  class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                  href="#"
                 >
-                  Posted on 19 August 2024
-                  <span class="px-half px-2">|</span>15 mins read
-                </div>
-              </a>
-            </div>
-
-            <div class="col-11 col-md-4 ps-2 p-lg-2">
-              <a href="#" class="new-card-body card blog-card text-body">
-                <div class="aspect-4x3">
                   <img
-                    src="images/thumbnail-photo-bkash-x-city-x-amex.webp"
-                    alt="ima not found"
-                    class="card-img-top"
+                    src="/images/nav_icons/mobile_rechars.webp"
+                    alt="Mobile Recharge"
+                    width="35"
+                    height="35"
                   />
-                </div>
+                  <span class="ms-1">Mobile Recharge</span>
+                </a>
+              </div>
 
-                <div class="card-body pb-0">
-                  <h5
-                    class="card-title fw-medium lh-sm line-clamp-3 mb-0 mb-md-half"
-                  >
-                    bKash receives ‘Fintech Pioneer Award’
-                  </h5>
-                </div>
-
-                <div
-                  class="card-footer pt-0 pb-1 bg-transparent border-0 fs--1 text-muted mb-2"
+              <div class="py-2 col-sm-3 col-5">
+                <a
+                  class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                  href="#"
                 >
-                  Posted on 19 August 2024
-                  <span class="px-half px-2">|</span>15 mins read
-                </div>
-              </a>
-            </div>
+                  <img
+                    src="/images/nav_icons/payment.webp"
+                    alt="Payment"
+                    width="35"
+                    height="35"
+                  />
+                  <span class="ms-1">Payment</span>
+                </a>
+              </div>
 
-            <div class="col-12 text-center pt-5 pt-md-4 mt-half mt-md-0">
-              <a href="#" class="btn btn_outline text-center rounded-pill"
-                >See all</a
-              >
+              <div class="py-2 col-sm-3 col-5">
+                <a
+                  class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                  href="#"
+                >
+                  <img
+                    src="/images/nav_icons/cash-out.webp"
+                    alt="Cash Out"
+                    width="35"
+                    height="35"
+                  />
+                  <span class="ms-1">Cash Out</span>
+                </a>
+              </div>
+
+              <div class="py-2 col-sm-3 col-5">
+                <a
+                  class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                  href="#"
+                >
+                  <img
+                    src="/images/nav_icons/add-money.webp"
+                    alt="Add Money"
+                    width="35"
+                    height="35"
+                  />
+                  <span class="ms-1">Add Money</span>
+                </a>
+              </div>
+
+              <div class="py-2 col-sm-3 col-5">
+                <a
+                  class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                  href="#"
+                >
+                  <img
+                    src="/images/nav_icons/pay-bill.webp"
+                    alt="Pay Bill"
+                    width="35"
+                    height="35"
+                  />
+                  <span class="ms-1">Pay Bill</span>
+                </a>
+              </div>
+
+              <div class="py-2 col-sm-3 col-5">
+                <a
+                  class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                  href="#"
+                >
+                  <img
+                    src="/images/nav_icons/savings-icon-web.webp"
+                    alt="Savings"
+                    width="35"
+                    height="35"
+                  />
+                  <span class="ms-1">Savings</span>
+                </a>
+              </div>
+
+              <div class="py-2 col-sm-3 col-5">
+                <a
+                  class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                  href=""
+                >
+                  <img
+                    src="/images/nav_icons/loan.webp"
+                    alt="Loan Service"
+                    width="35"
+                    height="35"
+                  />
+                  <span class="ms-1">Loan</span>
+                </a>
+              </div>
+
+              <div class="py-2 col-sm-3 col-5">
+                <a
+                  class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                  href="#"
+                >
+                  <img
+                    src="/images/nav_icons/transfer-money.webp"
+                    alt="bKash to Bank"
+                    width="35"
+                    height="35"
+                  />
+                  <span class="ms-1">bKash to Bank</span>
+                </a>
+              </div>
+
+              <div class="py-2 col-sm-3 col-5">
+                <a
+                  class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                  href="#"
+                >
+                  <img
+                    src="/images/nav_icons/rq-140px-x-140px.webp"
+                    alt="Request Money"
+                    width="35"
+                    height="35"
+                  />
+                  <span class="ms-1">Request Money</span>
+                </a>
+              </div>
+
+              <div class="py-2 col-sm-3 col-5">
+                <a
+                  class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                  href="#"
+                >
+                  <img
+                    src="/images/nav_icons/remittance.webp"
+                    alt="Remittance"
+                    width="35"
+                    height="35"
+                  />
+                  <span class="ms-1">Remittance</span>
+                </a>
+              </div>
+
+              <div class="py-2 col-sm-3 col-5">
+                <a
+                  class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                  href="#"
+                >
+                  <img
+                    src="/images/nav_icons/NGO.webp"
+                    alt="Microfinance"
+                    width="35"
+                    height="35"
+                  />
+                  <span class="ms-1">Microfinance</span>
+                </a>
+              </div>
+
+              <div class="py-2 col-sm-3 col-5">
+                <a
+                  class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                  href="#"
+                >
+                  <img
+                    src="/images/nav_icons/education.webp"
+                    alt="Education Fee"
+                    width="35"
+                    height="35"
+                  />
+                  <span class="ms-1">Education Fee</span>
+                </a>
+              </div>
+
+              <div class="py-2 col-sm-3 col-5">
+                <a
+                  class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                  href="#"
+                >
+                  <img
+                    src="/images/nav_icons/donation.webp"
+                    alt="Donation Icon"
+                    width="35"
+                    height="35"
+                  />
+                  <span class="ms-1">Donation</span>
+                </a>
+              </div>
+
+              <div class="py-2 col-sm-3 col-5">
+                <a
+                  class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                  href=""
+                >
+                  <img
+                    src="/images/nav_icons/insurance.webp"
+                    alt="Insurance"
+                    width="35"
+                    height="35"
+                  />
+                  <span class="ms-1">Insurance</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="px-3">
+      <!----------- heading container ------------>
+      <section id="student-heading">
+        <div class="row student-container">
+          <div class="col-12">
+            <h2 class="stu-head-tex">bKash Student Account</h2>
+          </div>
+        </div>
+      </section>
+
+      <!----- text container ------>
+
+      <section class="text-section">
+        <div class="student-container">
+          <div class="row">
+            <div class="col-12 student-account-text">
+              <p class="stude-accou-btn">
+                <a href="#" class="btn btn_outline">Download Now</a>
+              </p>
+
+              <p class="student-text-iframe">
+                <iframe
+                  width="100%"
+                  height="315"
+                  src="https://www.youtube.com/embed/jod92YkXBfA?si=hCsnk5Nup_klr40a"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+                With birth certificate, open bKash student account within
+                minute, And welcome offer is here for you, up to ৳130!!
+              </p>
+
+              <p><br />Want to pay in a smart way?</p>
+              <p>Recharge or send money - want everything instantly?</p>
+              <p>Want to open an account but do not have a NID?</p>
+              <p>
+                Now there is a great news for every students across the country!
+              </p>
+
+              <p>
+                From now under 14 to 18 years of age customers like you can open
+                bKash Student Account very easily. All you need is digital birth
+                certificate and mother/father's active bKash Account number!
+              </p>
+
+              <p>
+                So why the delay? Open a student account at bKash today!<br /><br />⚠️<span
+                  style="color: #e03e2d"
+                  ><strong
+                    >5 things you must consider while opening a bKash student
+                    account</strong
+                  ></span
+                ><br />1. Photo of Birth Certificate must be clear<br />2. Name,
+                date of birth and birth certificate number will be fetched from
+                the photo of Birth Certificate, and this information must be
+                matched with the information in the bKash App, if necessary,
+                changes should be made according to the birth certificate<br />3.
+                The name of mother or father who is to be selected as the parent
+                should be matched with the birth certificate, and if necessary,
+                changes should be made according to the birth certificate<br />4.
+                bKash number must be in the name of mother or father who is to
+                be selected as the parent<br />5. Proper self-portrait should be
+                taken standing in front of proper lighting and wearing
+                appropriate and modest dress
+              </p>
+
+              <p>
+                <a href="#"
+                  ><img
+                    class="w-100 h-100"
+                    src="/images/student-registration-step.jpeg"
+                    alt=""
+                    width="1600"
+                    height="900"
+                /></a>
+              </p>
+
+              <p>
+                <a href="#"
+                  ><img
+                    class="w-100 h-100"
+                    src="/images/offer-updated-under-.jpg"
+                    alt=""
+                    width="1600"
+                    height="900"
+                /></a>
+              </p>
+
+              <p>
+                <strong
+                  ><a href="#" style="color: #e2136e"
+                    >bKash Student Account Terms and Conditions &gt;&gt;</a
+                  ></strong
+                ><br /><br /><strong
+                  ><a href="#" style="color: #e2136e"
+                    >Offer Details &gt;&gt;</a
+                  ></strong
+                >
+              </p>
+
+              <p>
+                <strong
+                  ><a href="#" style="color: #e2136e"
+                    >Frequently Asked Questions &gt;&gt;</a
+                  ></strong
+                >
+              </p>
             </div>
           </div>
         </div>
@@ -799,7 +601,7 @@
                     >
                   </li>
                   <li class="footer-menu-item">
-                    <a class="footer-menu-link text-light" href="">Career</a>
+                    <a class="footer-menu-link text-light" href="#">Career</a>
                   </li>
                 </ul>
               </div>
