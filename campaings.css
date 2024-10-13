@@ -83,7 +83,7 @@
   transition: color 0.3s;
 }
 
-.card-body:hover h5 {
+.offer-preview-card:hover h5 {
   color: var(--primary-color);
 }
 

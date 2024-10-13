@@ -3,45 +3,1040 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Nav style</title>
   </head>
   <body>
-    <main>
-      <header class="header_style">
-        <div id="row banner">
-          <div class="col-12">
-            <div
-              class="your-class"
-              data-slick='{"slidesToShow": 5, "slidesToScroll": 5}'
+    <nav
+      class="navbar navbar-expand-xl sticky-top navbar-dark bg-primary py-0 justify-content-sm-center"
+    >
+      <div class="container mx-half mx-md-auto py-half py-xl-0">
+        <a class="navbar-brand py-0" href="https://www.bkash.com/en">
+          <svg
+            xml:space="preserve"
+            width="122"
+            height="54"
+            x="0px"
+            y="0px"
+            class="d-block top-nav-logo"
+            viewBox="0 0 122 54"
+          >
+            <title>bKash Logo</title>
+            <style type="text/css">
+              .st0 {
+                fill: #fff;
+              }
+            </style>
+            <polygon
+              points="82.6,26.2 85.9,40.8 107.3,30.1"
+              class="st0"
+            ></polygon>
+            <polygon
+              points="88.7,4.1 82.8,25.3 106.8,29.1"
+              class="st0"
+            ></polygon>
+            <polygon points="62.4,0.9 88,4 82,25.8" class="st0"></polygon>
+            <polygon points="62.2,5.1 65.2,5.1 73.2,15.4" class="st0"></polygon>
+            <polygon
+              points="108.1,29.9 100.6,19.6 112.6,17.3"
+              class="st0"
+            ></polygon>
+            <polygon
+              points="106.8,32.8 107.6,30.6 88.8,40.2"
+              class="st0"
+            ></polygon>
+            <polygon points="82.1,26.6 86,44.3 74.3,53.7" class="st0"></polygon>
+            <polygon
+              points="111.5,22.6 118.4,22.6 113.3,17.5"
+              class="st0"
+            ></polygon>
+            <path
+              d="M2.8 19.5c.3 0 .7.2 1 .2s.7 0 1-.2v10.9c1.1-1.8 2.4-3.1 4.4-3.1 3.6 0 5.2 3.6 5.2 6.9 0 3.9-2.1 7.7-5.7 7.7-2.1 0-3.1-1.3-3.6-2.1-.7.5-1.1 1.1-1.8 1.8H2.8C2.8 41.5 2.8 19.5 2.8 19.5zM5 35.6C5 38.9 6.3 41 8.6 41c2.9 0 3.8-3.9 3.8-6.7 0-3.3-1-5.7-3.6-5.7C5.8 28.6 5 32.2 5 35.6M24.1 26.6l-2.1 2.8c2.1 2.9 4.2 5.9 6.2 9l2.1 3.3v.2c-.5 0-1-.2-1.5-.2-.5 0-1 0-1.5.2-.5-1-1.1-2-1.8-2.9L20 30.6c-.2-.2-.5-.2-.5-.2v11.4c-.5 0-.8-.2-1.1-.2s-.8 0-1.1.2V19.5c.3 0 .8.2 1.1.2s.7 0 1.1-.2v10.1c0 .2.3 0 .7-.2.5-.5 1-1.1 1.3-1.6l6.4-8.3c.3 0 .7.2 1 .2.3 0 .7 0 1-.2L24.1 26.6zM40.9 39.4c0 1.1 0 1.8 1.5 1.3v.7c-.2.2-.5.2-.8.3-1.3.3-2.4 0-2.6-1.8l-.2.3c-1.1 1.3-2.3 2-3.8 2-1.8 0-3.4-1.5-3.4-3.6 0-3.4 2.3-3.8 4.7-4.2 2-.3 2.8-.5 2.8-2 0-2.1-1.1-3.4-2.9-3.4s-2.9 1.5-3.1 2.1h-.3v-1.6c1.3-1 2.6-1.6 4.1-1.6 2.6 0 4.1 1.6 4.1 4.9C40.9 32.7 40.9 39.4 40.9 39.4zM38.9 34.5l-1 .2c-1.8.3-4.4.7-4.4 3.4 0 1.8 1 2.8 2.4 2.8.7 0 1.6-.5 2.1-1.1.2-.2.7-.7.7-1v-4.2H38.9zM45.4 38.9c.7 1.1 1.8 2.1 2.9 2.1 1.3 0 2.4-1.1 2.4-2.8 0-3.9-6-1.5-6-6.5 0-2.8 1.8-4.4 4.2-4.4 1.3 0 2.4.5 2.9.8-.3.7-.5 1.3-.7 2.1h-.2c-.3-.8-1.3-1.8-2.1-1.8-1.3 0-2.3.8-2.3 2.4 0 3.8 6 1.8 6 6.5 0 3.1-2.4 4.7-4.7 4.7-1 0-2.3-.3-3.3-1 .2-.7.5-1.5.5-2.1h.2V38.9zM56 19.5c.3 0 .7.2 1 .2.3 0 .7 0 1-.2v10.8c.8-1.8 2.3-2.9 4.1-2.9 2.9 0 4.1 2 4.1 5.7v8.5c-.3 0-.7-.2-1-.2s-.7 0-1 .2v-7.8c0-3.3-.7-4.9-2.8-4.9-2.3 0-3.4 1.6-3.4 4.7v8c-.3 0-.7-.2-1-.2-.3 0-.7 0-1 .2C56 41.5 56 19.5 56 19.5z"
+              class="st0"
+            ></path>
+          </svg>
+        </a>
+
+        <!-- Landmarks -->
+        <div class="landmark">
+          <div class="landmark-body">
+            <a href="#top-menu-0" class="landmark-link d-none d-xl-block">
+              Skip to Navigation
+            </a>
+            <a href="#offcanvasToggler" class="landmark-link d-block d-xl-none">
+              Skip to Navigation
+            </a>
+            <a href="#main-content" class="landmark-link">
+              Skip to Main Content
+            </a>
+            <button id="open-live-chat" class="landmark-link">Live Chat</button>
+
+            <!-- Home -->
+            <a href="#financial-solutions-content" class="landmark-link">
+              Financial Solutions
+            </a>
+            <a href="#services-content" class="landmark-link"> Services </a>
+            <a href="#bkash-app-content" class="landmark-link"> bKash App </a>
+            <a href="#business-content" class="landmark-link">
+              Business Solutions
+            </a>
+            <a href="#whats-new-content" class="landmark-link"> What's New </a>
+            <a href="#touchpoints-content" class="landmark-link">
+              bKash Touchpoints
+            </a>
+            <a href="#offers-content" class="landmark-link"> Offers </a>
+            <a href="#secure-experience-content" class="landmark-link">
+              Secure Experience
+            </a>
+
+            <!-- Campaigns -->
+
+            <!-- Campaigns:Search -->
+
+            <!-- Service -->
+
+            <!-- Business -->
+
+            <!-- Help -->
+
+            <!-- Help:Locator -->
+
+            <!-- Career -->
+
+            <!-- About -->
+
+            <!-- Blog -->
+
+            <!-- BulkOffer:Search -->
+
+            <a href="#footer-content" class="landmark-link"> Jump to Footer </a>
+          </div>
+        </div>
+        <button
+          class="navbar-toggler border-0 p-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="navbar-toggler"
+          id="offcanvasToggler"
+        >
+          <span class="small">Menu</span>
+          <span class="d-inline-block">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1.5em"
+              height="1.5em"
+              fill="currentColor"
+              class="bi bi-list fs-2"
+              viewBox="0 0 16 16"
             >
-              <div class="slider">
-                <h1>Hello World</h1>
-              </div>
-              <div class="slider">
-                <h1>Hello World</h1>
-              </div>
-              <div class="slider">
-                <h1>Hello World</h1>
-              </div>
-              <div class="slider">
-                <h1>Hello World</h1>
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              ></path>
+            </svg>
+          </span>
+        </button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+          <!-- Sidebar Header -->
+          <div class="offcanvas-header px-2">
+            <button
+              type="button"
+              class="btn-close p-0"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xml:space="preserve"
+              width="70"
+              viewBox="0 0 67.2 29.7"
+            >
+              <title>bKash Logo</title>
+              <path
+                fill="#E2136E"
+                d="M.6 12.783c0-.3 0-.7-.1-1-.1-.3-.3-.5-.5-.7l1.8-.3v5.4s0 .1.1.1l.2-.2.5-.5c.2-.2.5-.3.7-.5.3-.1.6-.2 1-.2.5 0 .9.1 1.3.4.4.2.7.5.9.9.2.4.4.8.5 1.3 0 .5.1.9.1 1.4 0 .6-.1 1.1-.2 1.6s-.4 1-.7 1.4c-.3.4-.7.7-1.1.9-.5.2-1.1.4-1.6.3h-.8c-.2 0-.5-.1-.7-.1s-.5-.1-.7-.1H.5v-4.4l.1-5.7zm5 5.3c-.1-.4-.2-.7-.3-1-.2-.4-.4-.6-.7-.8-.2-.2-.6-.3-.9-.3-.6 0-1.1.2-1.4.7-.3.6-.5 1.3-.5 1.9v1.3c0 .3 0 .7.1 1 0 .3.1.6.2.8.1.2.3.4.5.6.3.2.6.2.9.2.4 0 .8-.1 1.1-.3.3-.2.5-.5.7-.8.2-.3.3-.7.3-1.1.1-.4.1-.7.1-1.1 0-.4 0-.8-.1-1.1z"
+              ></path>
+              <path
+                fill="#171717"
+                d="M9.2 14.083v-1.2c0-.4-.1-.7-.3-1.1h2.3c-.2.3-.3.7-.3 1.1V16.783c.2 0 .5-.1.6-.3.2-.2.5-.4.7-.6l.7-.7c.2-.3.5-.5.7-.8.5-.6.8-1 1.1-1.4.2-.2.4-.5.4-.8V11.883H17c-.4.4-.8.7-1.1 1-.4.3-.7.7-1.1 1.1l-2.6 2.8 2.8 4.1c.2.3.5.7.8 1 .3.3.5.7.8 1h-1.8c-.1 0-.3 0-.4-.1l-.3-.3-3.1-4.8c0-.1-.1-.1-.1-.2l-.1-.1h-.1v4.3c0 .4.1.7.3 1.1H8.8c.2-.3.3-.6.3-1v-1.2l.1-6.5zM21.8 22.983c-.1-.3-.1-.5-.1-.8 0-.2-.1-.3-.1-.3h-.1c-.1.2-.2.3-.3.5-.1.1-.2.3-.4.4-.2.1-.3.2-.5.3-.2.1-.5.1-.8.1-.5 0-1.1-.2-1.5-.5-.4-.3-.7-.9-.6-1.4 0-.4.1-.7.3-1 .2-.3.5-.5.8-.7.3-.2.7-.4 1-.5.4-.2.7-.3 1-.4l.6-.3c.1-.1.3-.2.4-.3.1-.1.2-.3.2-.4 0-.2.1-.4.1-.7 0-.4-.1-.8-.3-1.1-.2-.3-.6-.5-1-.4-.3 0-.6.1-.9.3-.4 0-.5.2-.6.4l-.3.6c-.1.2-.3.3-.6.3-.2 0-.3 0-.5-.1-.1-.1-.2-.3-.2-.5 0-.3.1-.5.3-.7.2-.2.5-.4.7-.5.3-.1.6-.2 1-.3.3-.1.7-.1 1-.1.3 0 .6 0 .9.1.2 0 .5.1.7.2.2.1.4.2.5.4.1.2.2.4.2.7v5.3c0 .5.2.9.4 1.3l-1.3.1zm-2.8-1.1c.3.2.6.3 1 .3.2 0 .5-.1.7-.2.2-.1.4-.3.5-.4l.3-.6c.1-.2.1-.5.1-.7v-1.7l-.9.5c-.3.2-.6.3-.8.4-.2.1-.4.3-.6.4-.2.1-.3.3-.4.5-.1.2-.1.4-.1.6-.1.3 0 .7.2.9zM26.1 17.283c.2.2.4.4.7.6.3.2.6.4.9.5.3.2.6.3.9.5.3.2.5.4.7.7.2.3.3.6.3 1s-.1.8-.3 1.1c-.2.3-.4.6-.7.8-.3.2-.6.4-1 .5-.4.1-.7.2-1.1.2-.3 0-.6 0-1-.1l-.9-.3c-.1 0-.2-.1-.2-.1-.1-.1-.1-.2-.1-.3v-.6c0-.2 0-.4.1-.6.1.2.3.4.4.6.1.2.3.3.4.4.2.1.3.2.5.3.2.1.5.1.7.1.4 0 .9-.1 1.2-.4.3-.3.5-.7.4-1.1 0-.3-.1-.6-.2-.9-.2-.2-.4-.5-.6-.6-.3-.2-.5-.4-.8-.5-.3-.2-.6-.3-.8-.5-.4-.3-.6-.5-.8-.8-.2-.3-.3-.7-.2-1.1 0-.6.2-1.1.7-1.4.6-.3 1.2-.5 1.9-.4.3 0 .5 0 .8.1.3 0 .5.1.8.1h.1c.1 0 .1.1.1.1v1.2c-.2-.2-.3-.4-.5-.5-.2-.1-.3-.2-.5-.3-.1-.1-.3-.1-.4-.2h-.5c-.3 0-.6.1-.9.3-.3.2-.4.5-.4.8 0 .3.1.6.3.8zM36.8 20.983v1c0 .3.1.6.2.9h-1.5v-5.6c0-.3-.1-.5-.2-.7-.1-.2-.3-.4-.5-.5-.2-.2-.5-.3-.8-.3-.3 0-.6.1-.8.2-.2.1-.4.3-.5.6-.1.2-.2.5-.2.8 0 .3-.1.6-.1.9v3.8c0 .3.1.6.3.9h-1.9c.2-.3.3-.6.3-.9v-9.3c0-.3 0-.7-.1-1 0-.3-.2-.6-.4-.7l1.8-.3v5.2l.2-.2.4-.4c.2-.1.4-.3.7-.4.3-.1.6-.2 1-.2.6 0 1.1.2 1.5.5.4.5.6 1.1.6 1.7v4z"
+              ></path>
+              <g fill="#E2136E">
+                <path
+                  d="m35.189 0 14.5 1.9-3.4 12L35.189 0zM50.189 2l10.8 14.3-12.4 6-1.6-6.4c-.2-1.4-.1-2.7.2-4.1l3-9.8zM61.389 16.2l-4-5.6 6.8-1.1-2.8 6.7zM64.689 9.4l2.5 2.7h-3.7l1.2-2.7zM50.689 21.9l10.3-5.1-.4 1.2-9.9 3.9zM46.189 15.2l-4.3 14.5 6.5-5.2-2.2-9.3zM40.789 7.7l-4.2-5.3-1.6.1 5.8 5.2z"
+                ></path>
+                <path
+                  d="M46.889 15.1c0 .5.1.8.1.8l1.5 6.3 12.4-6-.1-.2-13.9-.9z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+
+          <div
+            class="offcanvas-body px-2 px-xl-0 justify-content-start justify-content-md-between"
+            id="navigation-content"
+          >
+            <ul
+              class="navbar-nav justify-content-end flex-grow-1 align-items-stretch align-items-xl-center"
+            >
+              <!-- Dropdown Menu for TopNav -->
+
+              <li class="nav-item d-none d-xl-block position-static">
+                <a
+                  class="nav-link py-1"
+                  id="top-menu-0"
+                  href="https://www.bkash.com/en/campaign"
+                >
+                  <span class="px-1 py-half rounded-pill pe-none"
+                    >Campaigns</span
+                  >
+                </a>
+              </li>
+
+              <!-- Dropdown Menu for SideNav -->
+              <li class="nav-item d-block d-xl-none border-bottom">
+                <a
+                  class="nav-link text-dark fs-1"
+                  href="https://www.bkash.com/en/campaign"
+                  >Campaigns
+                </a>
+              </li>
+              <!-- Dropdown Menu for TopNav -->
+
+              <li
+                class="nav-item d-none d-xl-block position-static dropdown megamenu"
+              >
+                <a
+                  class="nav-link py-1 dropdown-toggle"
+                  id="top-menu-1"
+                  href="https://www.bkash.com/en/products-services"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <span class="px-1 py-half rounded-pill pe-none"
+                    >Services</span
+                  >
+                </a>
+
+                <div
+                  class="dropdown-menu rounded-0 border-0 shadow-sm mt-0 w-100"
+                  data-bs-popper="none"
+                  aria-labelledby="top-menu-1"
+                >
+                  <div class="landmark-dropdown">
+                    <a class="landmark-dropdown-link" href="#top-menu-2">
+                      Move to Next Menu
+                    </a>
+                  </div>
+                  <div class="container">
+                    <div class="row justify-content-center">
+                      <div class="col-10">
+                        <div class="row py-1 g-half">
+                          <div class="col-sm-3 col-5">
+                            <a
+                              class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                              data-target-url-param="send-money"
+                              href="https://www.bkash.com/en/products-services/send-money"
+                            >
+                              <img
+                                src="https://www.bkash.com/uploaded_contents/services/icons/01-send-money_1666154832042.webp"
+                                alt="সেন্ড মানি"
+                                width="35"
+                                height="35"
+                              />
+                              <span class="ms-1">Send Money</span>
+                            </a>
+                          </div>
+                          <div class="col-sm-3 col-5">
+                            <a
+                              class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                              data-target-url-param="mobile-recharge"
+                              href="https://www.bkash.com/en/products-services/mobile-recharge"
+                            >
+                              <img
+                                src="https://www.bkash.com/uploaded_contents/services/icons/02-mobile-recharge_1666155167971.webp"
+                                alt="Mobile Recharge"
+                                width="35"
+                                height="35"
+                              />
+                              <span class="ms-1">Mobile Recharge</span>
+                            </a>
+                          </div>
+                          <div class="col-sm-3 col-5">
+                            <a
+                              class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                              data-target-url-param="payment"
+                              href="https://www.bkash.com/en/products-services/payment"
+                            >
+                              <img
+                                src="https://www.bkash.com/uploaded_contents/services/icons/04-payment_1666159400113.webp"
+                                alt="Payment"
+                                width="35"
+                                height="35"
+                              />
+                              <span class="ms-1">Payment</span>
+                            </a>
+                          </div>
+                          <div class="col-sm-3 col-5">
+                            <a
+                              class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                              data-target-url-param="cashout"
+                              href="https://www.bkash.com/en/products-services/cashout"
+                            >
+                              <img
+                                src="https://www.bkash.com/uploaded_contents/services/icons/03-cash-out_1666158620022.webp"
+                                alt="Cash Out"
+                                width="35"
+                                height="35"
+                              />
+                              <span class="ms-1">Cash Out</span>
+                            </a>
+                          </div>
+                          <div class="col-sm-3 col-5">
+                            <a
+                              class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                              data-target-url-param="add-money"
+                              href="https://www.bkash.com/en/products-services/add-money"
+                            >
+                              <img
+                                src="https://www.bkash.com/uploaded_contents/services/icons/05-add-money_1666160847291.webp"
+                                alt="Add Money"
+                                width="35"
+                                height="35"
+                              />
+                              <span class="ms-1">Add Money</span>
+                            </a>
+                          </div>
+                          <div class="col-sm-3 col-5">
+                            <a
+                              class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                              data-target-url-param="pay-bill"
+                              href="https://www.bkash.com/en/products-services/pay-bill"
+                            >
+                              <img
+                                src="https://www.bkash.com/uploaded_contents/services/icons/06-pay-bill_1703790805248.webp"
+                                alt="Pay Bill"
+                                width="35"
+                                height="35"
+                              />
+                              <span class="ms-1">Pay Bill</span>
+                            </a>
+                          </div>
+                          <div class="col-sm-3 col-5">
+                            <a
+                              class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                              data-target-url-param="savings"
+                              href="https://www.bkash.com/en/products-services/savings"
+                            >
+                              <img
+                                src="https://www.bkash.com/uploaded_contents/services/icons/savings-icon-web_1727696283394.webp"
+                                alt="Savings"
+                                width="35"
+                                height="35"
+                              />
+                              <span class="ms-1">Savings</span>
+                            </a>
+                          </div>
+                          <div class="col-sm-3 col-5">
+                            <a
+                              class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                              data-target-url-param="loan"
+                              href="https://www.bkash.com/en/products-services/loan"
+                            >
+                              <img
+                                src="https://www.bkash.com/uploaded_contents/services/icons/08-loan_1669656798833.webp"
+                                alt="Loan Service"
+                                width="35"
+                                height="35"
+                              />
+                              <span class="ms-1">Loan</span>
+                            </a>
+                          </div>
+                          <div class="col-sm-3 col-5">
+                            <a
+                              class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                              data-target-url-param="bkash-to-bank"
+                              href="https://www.bkash.com/en/products-services/bkash-to-bank"
+                            >
+                              <img
+                                src="https://www.bkash.com/uploaded_contents/services/icons/10-transfer-money_1666169481952.webp"
+                                alt="bKash to Bank"
+                                width="35"
+                                height="35"
+                              />
+                              <span class="ms-1">bKash to Bank</span>
+                            </a>
+                          </div>
+                          <div class="col-sm-3 col-5">
+                            <a
+                              class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                              data-target-url-param="request-money"
+                              href="https://www.bkash.com/en/products-services/request-money"
+                            >
+                              <img
+                                src="https://www.bkash.com/uploaded_contents/services/icons/rq-140px-x-140px_1701968485695.webp"
+                                alt="Request Money"
+                                width="35"
+                                height="35"
+                              />
+                              <span class="ms-1">Request Money</span>
+                            </a>
+                          </div>
+                          <div class="col-sm-3 col-5">
+                            <a
+                              class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                              data-target-url-param="remittance"
+                              href="https://www.bkash.com/en/products-services/remittance"
+                            >
+                              <img
+                                src="https://www.bkash.com/uploaded_contents/services/icons/09-remittance_1666168732360.webp"
+                                alt="Remittance"
+                                width="35"
+                                height="35"
+                              />
+                              <span class="ms-1">Remittance</span>
+                            </a>
+                          </div>
+                          <div class="col-sm-3 col-5">
+                            <a
+                              class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                              data-target-url-param="microfinance"
+                              href="https://www.bkash.com/en/products-services/microfinance"
+                            >
+                              <img
+                                src="https://www.bkash.com/uploaded_contents/services/icons/12-NGO_1669658036501.webp"
+                                alt="Microfinance"
+                                width="35"
+                                height="35"
+                              />
+                              <span class="ms-1">Microfinance</span>
+                            </a>
+                          </div>
+                          <div class="col-sm-3 col-5">
+                            <a
+                              class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                              data-target-url-param="education"
+                              href="https://www.bkash.com/en/products-services/education"
+                            >
+                              <img
+                                src="https://www.bkash.com/uploaded_contents/services/icons/11-education_1703797436136.webp"
+                                alt="Education Fee"
+                                width="35"
+                                height="35"
+                              />
+                              <span class="ms-1">Education Fee</span>
+                            </a>
+                          </div>
+                          <div class="col-sm-3 col-5">
+                            <a
+                              class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                              data-target-url-param="donation"
+                              href="https://www.bkash.com/en/products-services/donation"
+                            >
+                              <img
+                                src="https://www.bkash.com/uploaded_contents/services/icons/13_1669034799648.webp"
+                                alt="Donation Icon"
+                                width="35"
+                                height="35"
+                              />
+                              <span class="ms-1">Donation</span>
+                            </a>
+                          </div>
+                          <div class="col-sm-3 col-5">
+                            <a
+                              class="dropdown-item text-dark text-nowrap text-truncate service-nav-link"
+                              data-target-url-param="insurance"
+                              href="https://www.bkash.com/en/products-services/insurance"
+                            >
+                              <img
+                                src="https://www.bkash.com/uploaded_contents/services/icons/14_1673328772329.webp"
+                                alt="Insurance"
+                                width="35"
+                                height="35"
+                              />
+                              <span class="ms-1">Insurance</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Dropdown Menu for SideNav -->
+              <li class="nav-item d-block d-xl-none border-bottom">
+                <a
+                  class="nav-link text-dark fs-1 d-flex justify-content-between"
+                  data-bs-toggle="offcanvas"
+                  data-href="https://www.bkash.com/en/products-services"
+                  href="#side-menu-id-3"
+                  aria-controls="offcanvas3"
+                  >Services
+                  <span class="bi bi-chevron-right"></span>
+                </a>
+              </li>
+              <!-- Dropdown Menu for TopNav -->
+
+              <li class="nav-item d-none d-xl-block position-static">
+                <a
+                  class="nav-link py-1"
+                  id="top-menu-2"
+                  href="https://www.bkash.com/en/business"
+                >
+                  <span class="px-1 py-half rounded-pill pe-none"
+                    >Business</span
+                  >
+                </a>
+              </li>
+
+              <!-- Dropdown Menu for SideNav -->
+              <li class="nav-item d-block d-xl-none border-bottom">
+                <a
+                  class="nav-link text-dark fs-1"
+                  href="https://www.bkash.com/en/business"
+                  >Business
+                </a>
+              </li>
+              <!-- Dropdown Menu for TopNav -->
+
+              <li
+                class="nav-item d-none d-xl-block position-static dropdown megamenu"
+              >
+                <a
+                  class="nav-link py-1 dropdown-toggle"
+                  id="top-menu-3"
+                  href="https://www.bkash.com/en/help"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <span class="px-1 py-half rounded-pill pe-none">Help</span>
+                </a>
+
+                <div
+                  class="dropdown-menu rounded-0 border-0 shadow-sm mt-0 w-100"
+                  data-bs-popper="none"
+                  aria-labelledby="top-menu-3"
+                >
+                  <div class="landmark-dropdown">
+                    <a class="landmark-dropdown-link" href="#top-menu-4">
+                      Move to Next Menu
+                    </a>
+                  </div>
+                  <div class="container">
+                    <div class="row justify-content-center">
+                      <div class="col-10">
+                        <div class="row py-1 g-1">
+                          <div class="col-9">
+                            <div class="row">
+                              <div class="col-sm-4 col-5">
+                                <a
+                                  class="dropdown-item text-dark text-nowrap"
+                                  href="https://www.bkash.com/en/help/locator/customer-care-points"
+                                >
+                                  Customer Care Points
+                                </a>
+                              </div>
+                              <div class="col-sm-4 col-5">
+                                <a
+                                  class="dropdown-item text-dark text-nowrap"
+                                  href="https://www.bkash.com/en/help/avoid-fraud"
+                                >
+                                  Avoid Fraud
+                                </a>
+                              </div>
+                              <div class="col-sm-4 col-5">
+                                <a
+                                  class="dropdown-item text-dark text-nowrap"
+                                  href="https://www.bkash.com/en/help/charge-calculator"
+                                >
+                                  Charge Calculator
+                                </a>
+                              </div>
+                              <div class="col-sm-4 col-5">
+                                <a
+                                  class="dropdown-item text-dark text-nowrap"
+                                  href="https://www.bkash.com/en/help/faq"
+                                >
+                                  Frequently Asked Questions
+                                </a>
+                              </div>
+                              <div class="col-sm-4 col-5">
+                                <a
+                                  class="dropdown-item text-dark text-nowrap"
+                                  href="https://www.bkash.com/en/help/limits"
+                                >
+                                  Charge and Limits
+                                </a>
+                              </div>
+                              <div class="col-sm-4 col-5">
+                                <a
+                                  class="dropdown-item text-dark text-nowrap"
+                                  href="https://www.bkash.com/en/help/interest-on-savings"
+                                >
+                                  Interest on Savings
+                                </a>
+                              </div>
+                              <div class="col-sm-4 col-5">
+                                <a
+                                  class="dropdown-item text-dark text-nowrap"
+                                  href="https://www.bkash.com/en/help/reset-pin"
+                                >
+                                  Reset Pin
+                                </a>
+                              </div>
+                              <div class="col-sm-4 col-5">
+                                <a
+                                  class="dropdown-item text-dark text-nowrap"
+                                  href="https://www.bkash.com/en/help/information-update"
+                                >
+                                  Info Update
+                                </a>
+                              </div>
+                              <div class="col-sm-4 col-5">
+                                <a
+                                  class="dropdown-item text-dark text-nowrap"
+                                  href="https://www.bkash.com/en/help/contact-us"
+                                >
+                                  Contact Us
+                                </a>
+                              </div>
+                              <div class="col-sm-4 col-5">
+                                <a
+                                  class="dropdown-item text-dark text-nowrap"
+                                  href="https://www.bkash.com/en/page/rewards"
+                                >
+                                  Rewards
+                                </a>
+                              </div>
+                              <div class="col-sm-4 col-5">
+                                <a
+                                  class="dropdown-item text-dark text-nowrap"
+                                  href="https://www.bkash.com/en/page/security-tips"
+                                >
+                                  Security Tips
+                                </a>
+                              </div>
+                              <div class="col-sm-4 col-5">
+                                <a
+                                  class="dropdown-item text-dark text-nowrap"
+                                  href="https://www.bkash.com/en/help/complaint-cell"
+                                >
+                                  Complaint Cell
+                                </a>
+                              </div>
+                              <div class="col-sm-4 col-5">
+                                <a
+                                  class="dropdown-item text-dark text-nowrap"
+                                  href="https://www.bkash.com/help/locator/discontinued-agents"
+                                >
+                                  Discontinued Agents
+                                </a>
+                              </div>
+                              <div class="col-sm-4 col-5">
+                                <a
+                                  class="dropdown-item text-dark text-nowrap"
+                                  href="https://www.bkash.com/help/locator/discontinued-distributors"
+                                >
+                                  Discontinued Distributors
+                                </a>
+                              </div>
+                              <div class="col-sm-4 col-5">
+                                <a
+                                  class="dropdown-item text-dark text-nowrap"
+                                  href="https://www.bkash.com/en/help/manage-account"
+                                >
+                                  Manage Account
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <ul class="list-unstyled mb-0">
+                              <li class="nav-item">
+                                <a
+                                  class="dropdown-item text-dark text-nowrap"
+                                  href="https://www.bkash.com/en/help/livechat"
+                                >
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="20"
+                                    height="19.236"
+                                    class="me-half"
+                                    viewBox="0 0 19.533 19.236"
+                                  >
+                                    <defs>
+                                      <style>
+                                        .a {
+                                          fill: #d4005b;
+                                        }
+                                      </style>
+                                    </defs>
+                                    <g transform="translate(-595.54 -111.721)">
+                                      <path
+                                        d="M605.276 111.722a9.648 9.648 0 0 1 8.8 13.92 1.913 1.913 0 0 0-.086 1.191c.257 1.038.618 2.049.917 3.077.226.78-.1 1.1-.873.88-1.077-.31-2.139-.673-3.225-.944a1.777 1.777 0 0 0-1.106.1 9.888 9.888 0 0 1-13.654-5.517 9.584 9.584 0 0 1 8.3-12.633c.329-.024.651-.052.927-.074Zm8.343 17.787c-.28-.934-.484-1.754-.775-2.542a1.735 1.735 0 0 1 .145-1.626 7.62 7.62 0 0 0 1.056-4.5 8.753 8.753 0 1 0-4.612 7.992 1.687 1.687 0 0 1 1.493-.147c.844.303 1.713.53 2.693.823Z"
+                                        class="a"
+                                      ></path>
+                                      <circle
+                                        cx="1.338"
+                                        cy="1.338"
+                                        r="1.338"
+                                        class="a"
+                                        transform="translate(600.437 119.993)"
+                                      ></circle>
+                                      <circle
+                                        cx="1.338"
+                                        cy="1.338"
+                                        r="1.338"
+                                        class="a"
+                                        transform="translate(603.957 119.993)"
+                                      ></circle>
+                                      <circle
+                                        cx="1.338"
+                                        cy="1.338"
+                                        r="1.338"
+                                        class="a"
+                                        transform="translate(607.477 119.993)"
+                                      ></circle>
+                                    </g>
+                                  </svg>
+                                  Live Chat
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a
+                                  class="dropdown-item text-dark text-nowrap"
+                                  href="tel:16247"
+                                >
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="20"
+                                    height="19.968"
+                                    class="me-half"
+                                    viewBox="0 0 19.968 19.968"
+                                  >
+                                    <defs>
+                                      <style>
+                                        .a {
+                                          fill: #d4005b;
+                                        }
+                                      </style>
+                                    </defs>
+                                    <path
+                                      d="M4.062 6.52a1.19 1.19 0 0 1 .353-.941c.407-.39.8-.8 1.2-1.2a.85.85 0 0 1 1.3 0q.734.722 1.457 1.456a.853.853 0 0 1-.024 1.358c-.282.278-.568.552-.851.829-.226.222-.233.311-.031.561a26.021 26.021 0 0 0 3.987 3.955.321.321 0 0 0 .5-.03c.283-.3.573-.6.865-.89a.826.826 0 0 1 1.3-.008q.754.738 1.5 1.492a.817.817 0 0 1 .007 1.241c-.409.425-.831.838-1.248 1.255a1.356 1.356 0 0 1-1.319.224 6.084 6.084 0 0 1-2.229-.928 17.855 17.855 0 0 1-5.967-6.089 5.63 5.63 0 0 1-.767-2.011c-.019-.11-.028-.221-.033-.274Z"
+                                      class="a"
+                                    ></path>
+                                    <path
+                                      d="M9.983 19.968a9.984 9.984 0 1 1 9.985-9.984 9.984 9.984 0 0 1-9.985 9.984Zm0-19.218a9.234 9.234 0 1 0 9.235 9.234A9.234 9.234 0 0 0 9.983.75Z"
+                                      class="a"
+                                    ></path>
+                                  </svg>
+                                  Help Line 16247
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a
+                                  class="dropdown-item text-dark text-nowrap"
+                                  href="https://eappointment.bkash.com/"
+                                  target="_blank"
+                                >
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="20"
+                                    height="23.999"
+                                    class="me-half"
+                                    viewBox="0 0 22.289 23.999"
+                                  >
+                                    <g fill="#d4005b">
+                                      <path
+                                        d="M20.631 2.9h-2.825V1.658c0-.916.257-1.658-.658-1.658h-.066c-.916 0-.658.743-.658 1.658V2.9H5.866V1.658C5.866.742 6.123 0 5.208 0h-.066c-.916 0-.658.743-.658 1.658V2.9H1.658A1.658 1.658 0 0 0 0 4.558V22.34A1.658 1.658 0 0 0 1.658 24h18.973a1.658 1.658 0 0 0 1.658-1.658V4.562A1.658 1.658 0 0 0 20.631 2.9Zm.872 20.475H.786V3.912h20.717Z"
+                                      ></path>
+                                      <path
+                                        d="M5.049 14.032H7.98a.27.27 0 0 0 .27-.27v-2.931a.27.27 0 0 0-.27-.27H5.049a.27.27 0 0 0-.27.27v2.931a.27.27 0 0 0 .27.27ZM9.679 14.032h2.931a.27.27 0 0 0 .27-.27v-2.931a.27.27 0 0 0-.27-.27H9.679a.27.27 0 0 0-.27.27v2.931a.27.27 0 0 0 .27.27ZM14.31 14.032h2.931a.27.27 0 0 0 .27-.27v-2.931a.27.27 0 0 0-.27-.27H14.31a.27.27 0 0 0-.27.27v2.931a.27.27 0 0 0 .27.27ZM5.049 18.663H7.98a.27.27 0 0 0 .27-.27v-2.931a.27.27 0 0 0-.27-.27H5.049a.27.27 0 0 0-.27.27v2.931a.27.27 0 0 0 .27.27ZM9.679 18.663h2.931a.27.27 0 0 0 .27-.27v-2.931a.27.27 0 0 0-.27-.27H9.679a.27.27 0 0 0-.27.27v2.931a.27.27 0 0 0 .27.27ZM14.31 18.663h2.931a.27.27 0 0 0 .27-.27v-2.931a.27.27 0 0 0-.27-.27H14.31a.27.27 0 0 0-.27.27v2.931a.27.27 0 0 0 .27.27Z"
+                                      ></path>
+                                    </g>
+                                  </svg>
+                                  e-Appointment
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Dropdown Menu for SideNav -->
+              <li class="nav-item d-block d-xl-none border-bottom">
+                <a
+                  class="nav-link text-dark fs-1 d-flex justify-content-between"
+                  data-bs-toggle="offcanvas"
+                  data-href="https://www.bkash.com/en/help"
+                  href="#side-menu-id-5"
+                  aria-controls="offcanvas5"
+                  >Help
+                  <span class="bi bi-chevron-right"></span>
+                </a>
+              </li>
+              <!-- Dropdown Menu for TopNav -->
+
+              <li class="nav-item d-none d-xl-block position-static">
+                <a
+                  class="nav-link py-1"
+                  id="top-menu-4"
+                  href="https://www.bkash.com/en/career"
+                >
+                  <span class="px-1 py-half rounded-pill pe-none">Career</span>
+                </a>
+              </li>
+
+              <!-- Dropdown Menu for SideNav -->
+              <li class="nav-item d-block d-xl-none border-bottom">
+                <a
+                  class="nav-link text-dark fs-1"
+                  href="https://www.bkash.com/en/career"
+                  >Career
+                </a>
+              </li>
+              <!-- Dropdown Menu for TopNav -->
+
+              <li class="nav-item d-none d-xl-block position-static">
+                <a
+                  class="nav-link py-1"
+                  id="top-menu-5"
+                  href="https://www.bkash.com/en/about"
+                >
+                  <span class="px-1 py-half rounded-pill pe-none">About</span>
+                </a>
+              </li>
+
+              <!-- Dropdown Menu for SideNav -->
+              <li class="nav-item d-block d-xl-none border-bottom">
+                <a
+                  class="nav-link text-dark fs-1"
+                  href="https://www.bkash.com/en/about"
+                  >About
+                </a>
+              </li>
+              <!-- Dropdown Menu for TopNav -->
+
+              <li class="nav-item d-none d-xl-block position-static">
+                <a
+                  class="nav-link py-1"
+                  id="top-menu-6"
+                  href="https://www.bkash.com/en/blog"
+                >
+                  <span class="px-1 py-half rounded-pill pe-none">Blog</span>
+                </a>
+              </li>
+
+              <!-- Dropdown Menu for SideNav -->
+              <li class="nav-item d-block d-xl-none border-bottom">
+                <a
+                  class="nav-link text-dark fs-1"
+                  href="https://www.bkash.com/en/blog"
+                  >Blog
+                </a>
+              </li>
+              <!-- Dropdown Menu for TopNav -->
+
+              <li class="nav-item d-none d-xl-block position-static">
+                <a
+                  class="nav-link py-1"
+                  id="top-menu-7"
+                  href="https://www.bkash.com/page/student-account"
+                >
+                  <span class="px-1 py-half rounded-pill pe-none">Student</span>
+                </a>
+              </li>
+
+              <!-- Dropdown Menu for SideNav -->
+              <li class="nav-item d-block d-xl-none border-bottom">
+                <a
+                  class="nav-link text-dark fs-1"
+                  href="https://www.bkash.com/page/student-account"
+                  >Student
+                </a>
+              </li>
+            </ul>
+            <ul
+              class="navbar-nav justify-content-end flex-grow-1 align-items-stretch align-items-xl-center"
+            >
+              <li class="nav-item d-none d-xl-block ms-1 me-1">
+                <button
+                  onclick="location.href='https://www.bkash.com/en/app';"
+                  class="btn btn-sm btn-outline-light rounded-pill text-nowrap px-2 top-nav-app-btn"
+                  id="top-menu-bkash-app"
+                >
+                  bKash App
+                </button>
+              </li>
+              <li class="nav-item d-none d-xl-block text-nowrap ms-1">
+                <button
+                  class="btn btn-sm rounded-pill shadow-none text-white lang-switcher lang-switcher-en en-lang"
+                  type="button"
+                >
+                  <svg
+                    id="eng_bold"
+                    data-name="English Bold"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 18.78 11.09"
+                    height="16"
+                  >
+                    <title>English</title>
+                    <path
+                      d="M244.84,186.49h-3.16v2.44h3.76v1.31H240v-8.53h5.46V183h-3.75v2.14h3.16Z"
+                      transform="translate(-239.97 -181.71)"
+                      fill="currentColor"
+                    ></path>
+                    <path
+                      d="M248.08,183.9l.07.91a2.36,2.36,0,0,1,.78-.76,2.14,2.14,0,0,1,1-.26,1.89,1.89,0,0,1,1.5.61,3,3,0,0,1,.54,2v3.88h-1.72v-3.88a1.5,1.5,0,0,0-.24-1,.85.85,0,0,0-.71-.28,1.44,1.44,0,0,0-.67.14,1.4,1.4,0,0,0-.48.39v4.59h-1.71V183.9Z"
+                      transform="translate(-239.97 -181.71)"
+                      fill="currentColor"
+                    ></path>
+                    <path
+                      d="M253,187.12a4.09,4.09,0,0,1,.65-2.41,2.11,2.11,0,0,1,1.83-.92,1.8,1.8,0,0,1,.94.24,2,2,0,0,1,.69.68l.14-.81h1.47v6.31a2.37,2.37,0,0,1-.81,1.92,3.42,3.42,0,0,1-2.26.67,4.19,4.19,0,0,1-1-.13,4.82,4.82,0,0,1-1-.36L254,191a4.13,4.13,0,0,0,.81.29,4.39,4.39,0,0,0,.91.09,1.49,1.49,0,0,0,1-.29,1.15,1.15,0,0,0,.34-.91v-.58a2,2,0,0,1-.67.55,2,2,0,0,1-.87.19,2.17,2.17,0,0,1-1.82-.86,3.65,3.65,0,0,1-.65-2.26Zm1.71.13a2.68,2.68,0,0,0,.28,1.31,1,1,0,0,0,.91.48,1.36,1.36,0,0,0,.67-.15,1,1,0,0,0,.44-.42v-2.75a1.27,1.27,0,0,0-.44-.45,1.33,1.33,0,0,0-.65-.15,1,1,0,0,0-.92.55,3.19,3.19,0,0,0-.29,1.45Z"
+                      transform="translate(-239.97 -181.71)"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </button>
+
+                <span class="text-white">|</span>
+
+                <button
+                  class="btn btn-sm rounded-pill shadow-none text-white lang-switcher lang-switcher-bn bn-lang"
+                  type="button"
+                >
+                  <svg
+                    id="ban_reg"
+                    data-name="Bangla Regular"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24.97 10.15"
+                    height="16"
+                  >
+                    <title>Bengali</title>
+                    <g opacity="0.78">
+                      <path
+                        d="M244.5,183.52v7.42l-.38-.53-.16-.36-.17-.34-.17-.29c-.11-.17-.21-.31-.3-.43l-.26-.29a2.67,2.67,0,0,0-.33-.27,4,4,0,0,0-.5-.31L242,188l-.24-.13-.25-.12-.22-.1a2.18,2.18,0,0,0-.44-.11,3.4,3.4,0,0,0-.45,0l-.92-1.31.87-.59.9-.53,1.24-.61.59-.25.69-.23v-.48h-4.64l-.7-.73h6.68l.7.73Zm-.71,1.64a7,7,0,0,0-.79.3,7.33,7.33,0,0,0-.79.4l-.67.39-.53.35a4.54,4.54,0,0,1,.45.21c.14.08.29.16.44.26a4.62,4.62,0,0,1,.4.27l.4.32.47.46a2.83,2.83,0,0,1,.29.35c.11.14.22.3.33.47Z"
+                        transform="translate(-238.45 -181.5)"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        d="M249,183.52h-1.6V191l-.68-.72v-5.4a1,1,0,0,0,0-.29,1.21,1.21,0,0,0-.18-.47,1.7,1.7,0,0,0-.47-.45,1.12,1.12,0,0,0-.65-.21l-.18,0-.74-.73h.28l.29,0h.22a2,2,0,0,1,.64.12,1.28,1.28,0,0,1,.31.2,2,2,0,0,1,.46.68l.13.27.11.31.09.3-.23-1.64-.05-.87v-.31a1.55,1.55,0,0,0,0-.33l.29.23.05.37.06.23.07.16.16.21.08.09h.88Z"
+                        transform="translate(-238.45 -181.5)"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        d="M251.69,186a1.9,1.9,0,0,1-.42.31,1.16,1.16,0,0,1-.5.13,1.55,1.55,0,0,1-1.12-.58,2,2,0,0,1-.49-1.28,1.58,1.58,0,0,1,.11-.58,1.15,1.15,0,0,1,.37-.47,1.48,1.48,0,0,1,.93-.35,1.42,1.42,0,0,1,1.09.5,1.44,1.44,0,0,1,.35.54,1.68,1.68,0,0,1,.12.63,1.48,1.48,0,0,1,0,.31,1.61,1.61,0,0,1-.09.29,1.25,1.25,0,0,1-.12.27Zm.87,4.82-1.16-1-.74-.57c-.24-.18-.46-.35-.67-.49a5,5,0,0,0-.57-.37v-1.63l.77.67.3.25.59.58c.08.08.24.25.47.52l.94,1.09.92,1.11v.62ZM251,185.44l.26-.2a1.45,1.45,0,0,0,.17-.19.76.76,0,0,0,.09-.18.59.59,0,0,0,.05-.19.28.28,0,0,0-.07-.19.53.53,0,0,0-.2-.16,1.09,1.09,0,0,0-.27-.11,1.43,1.43,0,0,0-.29,0,.87.87,0,0,0-.61.18,1.16,1.16,0,0,0-.36.9c0,.35.14.53.42.53a.94.94,0,0,0,.36-.09A3,3,0,0,0,251,185.44Z"
+                        transform="translate(-238.45 -181.5)"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        d="M260.6,183.52h-1.49v7.35l-.75-.67v-4a.7.7,0,0,0-.12-.35.75.75,0,0,0-.26-.35l-.1-.07a1.1,1.1,0,0,0-.53-.15.5.5,0,0,0-.37.26l-.09.24v.29l.06.35-.3.12-.1-.23-.06-.11a1.64,1.64,0,0,0-.38-.56,1.74,1.74,0,0,0-.75-.35l-.31-.05a1.28,1.28,0,0,0-.77.26,1.36,1.36,0,0,0-.48.75l0,.31a.92.92,0,0,0,.27.67,1.42,1.42,0,0,0,.68.31,1.12,1.12,0,0,1-.2-.57.7.7,0,0,1,.26-.53.8.8,0,0,1,.55-.24.82.82,0,0,1,.75.55c0,.15.08.27.1.36a1.25,1.25,0,0,1,0,.29l0,.14a1,1,0,0,1-.43.51,1.37,1.37,0,0,1-.68.17,2.06,2.06,0,0,1-.59-.09A3.09,3.09,0,0,1,254,188a2.48,2.48,0,0,1-.71-.73,2.14,2.14,0,0,1-.23-1l.05-.47a2.11,2.11,0,0,1,.2-.63,1.61,1.61,0,0,1,.35-.49,1.59,1.59,0,0,1,.46-.32,1.25,1.25,0,0,1,.5-.11,2,2,0,0,1,1,.25l.36.31.26.33s0-.1,0-.19a1.53,1.53,0,0,1,.21-.27,2.6,2.6,0,0,1,.31-.25,1,1,0,0,1,.33-.14.89.89,0,0,1,.66.24l.27.37.13.2.22.44v-2h-5.57l-.74-.73h7.78Z"
+                        transform="translate(-238.45 -181.5)"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        d="M263.42,183.52h-1.6V191l-.68-.72v-5.4a1,1,0,0,0,0-.29,1.21,1.21,0,0,0-.18-.47,1.7,1.7,0,0,0-.47-.45,1.14,1.14,0,0,0-.65-.21l-.19,0-.73-.73h.28l.29,0h.22a2,2,0,0,1,.64.12,1.28,1.28,0,0,1,.31.2,2,2,0,0,1,.46.68l.13.27.11.31.09.3-.23-1.64-.05-.87v-.31a1.55,1.55,0,0,0,0-.33l.28.23.06.37.06.23.07.16.16.21.08.09h.88Z"
+                        transform="translate(-238.45 -181.5)"
+                        fill="currentColor"
+                      ></path>
+                    </g>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+
+            <div class="d-flex d-xl-none flex-column align-items-center mt-3">
+              <a
+                href="https://www.bkash.com/en/app"
+                class="btn btn-outline-primary btn-sm rounded-pill shadow-sm px-2"
+                >bKash App</a
+              >
+
+              <div class="d-flex mt-1 language-switcher">
+                <button
+                  class="btn btn-sm px-half rounded-pill shadow-none fs-0 lang-switcher lang-switcher-en text-primary"
+                  type="button"
+                >
+                  <svg
+                    id="eng_bold"
+                    data-name="English Bold"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 18.78 11.09"
+                    height="16"
+                  >
+                    <title>English</title>
+                    <path
+                      d="M244.84,186.49h-3.16v2.44h3.76v1.31H240v-8.53h5.46V183h-3.75v2.14h3.16Z"
+                      transform="translate(-239.97 -181.71)"
+                      fill="currentColor"
+                    ></path>
+                    <path
+                      d="M248.08,183.9l.07.91a2.36,2.36,0,0,1,.78-.76,2.14,2.14,0,0,1,1-.26,1.89,1.89,0,0,1,1.5.61,3,3,0,0,1,.54,2v3.88h-1.72v-3.88a1.5,1.5,0,0,0-.24-1,.85.85,0,0,0-.71-.28,1.44,1.44,0,0,0-.67.14,1.4,1.4,0,0,0-.48.39v4.59h-1.71V183.9Z"
+                      transform="translate(-239.97 -181.71)"
+                      fill="currentColor"
+                    ></path>
+                    <path
+                      d="M253,187.12a4.09,4.09,0,0,1,.65-2.41,2.11,2.11,0,0,1,1.83-.92,1.8,1.8,0,0,1,.94.24,2,2,0,0,1,.69.68l.14-.81h1.47v6.31a2.37,2.37,0,0,1-.81,1.92,3.42,3.42,0,0,1-2.26.67,4.19,4.19,0,0,1-1-.13,4.82,4.82,0,0,1-1-.36L254,191a4.13,4.13,0,0,0,.81.29,4.39,4.39,0,0,0,.91.09,1.49,1.49,0,0,0,1-.29,1.15,1.15,0,0,0,.34-.91v-.58a2,2,0,0,1-.67.55,2,2,0,0,1-.87.19,2.17,2.17,0,0,1-1.82-.86,3.65,3.65,0,0,1-.65-2.26Zm1.71.13a2.68,2.68,0,0,0,.28,1.31,1,1,0,0,0,.91.48,1.36,1.36,0,0,0,.67-.15,1,1,0,0,0,.44-.42v-2.75a1.27,1.27,0,0,0-.44-.45,1.33,1.33,0,0,0-.65-.15,1,1,0,0,0-.92.55,3.19,3.19,0,0,0-.29,1.45Z"
+                      transform="translate(-239.97 -181.71)"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </button>
+                <span class="fs-0 px-half">|</span>
+                <button
+                  class="btn btn-sm px-half rounded-pill shadow-none fs-0 lang-switcher lang-switcher-bn"
+                  type="button"
+                >
+                  <svg
+                    id="ban_reg"
+                    data-name="Bangla Regular"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24.97 10.15"
+                    height="16"
+                  >
+                    <title>Bengali</title>
+                    <g opacity="0.78">
+                      <path
+                        d="M244.5,183.52v7.42l-.38-.53-.16-.36-.17-.34-.17-.29c-.11-.17-.21-.31-.3-.43l-.26-.29a2.67,2.67,0,0,0-.33-.27,4,4,0,0,0-.5-.31L242,188l-.24-.13-.25-.12-.22-.1a2.18,2.18,0,0,0-.44-.11,3.4,3.4,0,0,0-.45,0l-.92-1.31.87-.59.9-.53,1.24-.61.59-.25.69-.23v-.48h-4.64l-.7-.73h6.68l.7.73Zm-.71,1.64a7,7,0,0,0-.79.3,7.33,7.33,0,0,0-.79.4l-.67.39-.53.35a4.54,4.54,0,0,1,.45.21c.14.08.29.16.44.26a4.62,4.62,0,0,1,.4.27l.4.32.47.46a2.83,2.83,0,0,1,.29.35c.11.14.22.3.33.47Z"
+                        transform="translate(-238.45 -181.5)"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        d="M249,183.52h-1.6V191l-.68-.72v-5.4a1,1,0,0,0,0-.29,1.21,1.21,0,0,0-.18-.47,1.7,1.7,0,0,0-.47-.45,1.12,1.12,0,0,0-.65-.21l-.18,0-.74-.73h.28l.29,0h.22a2,2,0,0,1,.64.12,1.28,1.28,0,0,1,.31.2,2,2,0,0,1,.46.68l.13.27.11.31.09.3-.23-1.64-.05-.87v-.31a1.55,1.55,0,0,0,0-.33l.29.23.05.37.06.23.07.16.16.21.08.09h.88Z"
+                        transform="translate(-238.45 -181.5)"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        d="M251.69,186a1.9,1.9,0,0,1-.42.31,1.16,1.16,0,0,1-.5.13,1.55,1.55,0,0,1-1.12-.58,2,2,0,0,1-.49-1.28,1.58,1.58,0,0,1,.11-.58,1.15,1.15,0,0,1,.37-.47,1.48,1.48,0,0,1,.93-.35,1.42,1.42,0,0,1,1.09.5,1.44,1.44,0,0,1,.35.54,1.68,1.68,0,0,1,.12.63,1.48,1.48,0,0,1,0,.31,1.61,1.61,0,0,1-.09.29,1.25,1.25,0,0,1-.12.27Zm.87,4.82-1.16-1-.74-.57c-.24-.18-.46-.35-.67-.49a5,5,0,0,0-.57-.37v-1.63l.77.67.3.25.59.58c.08.08.24.25.47.52l.94,1.09.92,1.11v.62ZM251,185.44l.26-.2a1.45,1.45,0,0,0,.17-.19.76.76,0,0,0,.09-.18.59.59,0,0,0,.05-.19.28.28,0,0,0-.07-.19.53.53,0,0,0-.2-.16,1.09,1.09,0,0,0-.27-.11,1.43,1.43,0,0,0-.29,0,.87.87,0,0,0-.61.18,1.16,1.16,0,0,0-.36.9c0,.35.14.53.42.53a.94.94,0,0,0,.36-.09A3,3,0,0,0,251,185.44Z"
+                        transform="translate(-238.45 -181.5)"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        d="M260.6,183.52h-1.49v7.35l-.75-.67v-4a.7.7,0,0,0-.12-.35.75.75,0,0,0-.26-.35l-.1-.07a1.1,1.1,0,0,0-.53-.15.5.5,0,0,0-.37.26l-.09.24v.29l.06.35-.3.12-.1-.23-.06-.11a1.64,1.64,0,0,0-.38-.56,1.74,1.74,0,0,0-.75-.35l-.31-.05a1.28,1.28,0,0,0-.77.26,1.36,1.36,0,0,0-.48.75l0,.31a.92.92,0,0,0,.27.67,1.42,1.42,0,0,0,.68.31,1.12,1.12,0,0,1-.2-.57.7.7,0,0,1,.26-.53.8.8,0,0,1,.55-.24.82.82,0,0,1,.75.55c0,.15.08.27.1.36a1.25,1.25,0,0,1,0,.29l0,.14a1,1,0,0,1-.43.51,1.37,1.37,0,0,1-.68.17,2.06,2.06,0,0,1-.59-.09A3.09,3.09,0,0,1,254,188a2.48,2.48,0,0,1-.71-.73,2.14,2.14,0,0,1-.23-1l.05-.47a2.11,2.11,0,0,1,.2-.63,1.61,1.61,0,0,1,.35-.49,1.59,1.59,0,0,1,.46-.32,1.25,1.25,0,0,1,.5-.11,2,2,0,0,1,1,.25l.36.31.26.33s0-.1,0-.19a1.53,1.53,0,0,1,.21-.27,2.6,2.6,0,0,1,.31-.25,1,1,0,0,1,.33-.14.89.89,0,0,1,.66.24l.27.37.13.2.22.44v-2h-5.57l-.74-.73h7.78Z"
+                        transform="translate(-238.45 -181.5)"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        d="M263.42,183.52h-1.6V191l-.68-.72v-5.4a1,1,0,0,0,0-.29,1.21,1.21,0,0,0-.18-.47,1.7,1.7,0,0,0-.47-.45,1.14,1.14,0,0,0-.65-.21l-.19,0-.73-.73h.28l.29,0h.22a2,2,0,0,1,.64.12,1.28,1.28,0,0,1,.31.2,2,2,0,0,1,.46.68l.13.27.11.31.09.3-.23-1.64-.05-.87v-.31a1.55,1.55,0,0,0,0-.33l.28.23.06.37.06.23.07.16.16.21.08.09h.88Z"
+                        transform="translate(-238.45 -181.5)"
+                        fill="currentColor"
+                      ></path>
+                    </g>
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
         </div>
-      </header>
-    </main>
+      </div>
+    </nav>
   </body>
 </html>
-
-<!-- 
-
-
-
-
-
-
-
- 
-
--->

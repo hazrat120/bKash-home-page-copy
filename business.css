@@ -1,0 +1,48 @@
+#business-solution-container {
+  padding: 4rem 0;
+}
+
+.business-card-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.business-card-text {
+  margin-bottom: 0 !important;
+  transition: color 0.3s;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin-top: 0 !important;
+  text-align: center;
+  padding-top: 16px;
+}
+
+.card-a {
+  margin-top: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.col-xl-1-5 {
+  flex: 0 0 12.5%;
+  max-width: 12.5%;
+}
+
+.busi-card-head {
+  padding: 0 16px;
+  margin-top: 32px;
+  align-items: center;
+  justify-content: center;
+}
+
+#online-busines-container {
+  background-color: #ffeff6;
+  padding: 4rem 0;
+}
+
+.business-white {
+  background-color: #fff !important;
+}
