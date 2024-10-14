@@ -1,0 +1,30 @@
+.fs-1 {
+  font-size: 1.25rem !important;
+  font-weight: 400;
+  line-height: 35px !important;
+}
+
+.pb-half {
+  padding-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  padding-top: 0;
+}
+
+.career-h2 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 46px;
+  margin-bottom: 16px;
+}
+
+.career-social-wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  column-gap: 35px;
+  padding-top: 20px;
+}
+
