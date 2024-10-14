@@ -213,6 +213,13 @@ html {
   justify-content: center;
   gap: 5px;
 }
+
+.lan {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
 .eng .bng {
   font-size: 14px;
   font-weight: 500;
