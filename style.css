@@ -51,7 +51,7 @@ html {
   display: inline-block;
   font-size: calc(1.28125rem + 0.375vw);
   font-weight: 500;
-  line-height: 1.25;
+  line-height: 0.8;
   padding: 0.5rem 3.25rem;
   text-align: center;
   text-decoration: none;
@@ -227,6 +227,13 @@ html {
   justify-content: center;
   gap: 15px;
 }
+
+.lan {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
 .eng .bng {
   font-size: 14px;
   font-weight: 500;
