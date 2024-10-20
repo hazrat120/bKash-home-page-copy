@@ -104,8 +104,18 @@ html {
   display: block;
 } */
 
+#navbarNavDropdown {
+  height: 61px;
+  justify-content: right;
+}
+
+.top-nav-logo {
+  height: 61px !important;
+}
+
 .navbar-brand {
-  padding: 0 0 !important;
+  padding: 0 0 0 15px !important;
+  margin: 0;
 }
 
 .nav-item {
@@ -180,7 +190,7 @@ html {
   text-align: start;
   unicode-bidi: isolate;
   visibility: visible;
-  column-gap: 25px;
+  column-gap: 30px;
   margin-left: 15px;
 }
 
@@ -207,11 +217,15 @@ html {
   background-color: var(--custome-color);
 }
 
+.lan {
+  display: flex !important;
+}
+
 .lan_child {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
+  gap: 15px;
 }
 .eng .bng {
   font-size: 14px;
@@ -780,4 +794,13 @@ html {
 
 .box-slide-show {
   display: block;
+}
+
+.custom-banner-img {
+  position: fixed;
+  width: 171px;
+  background: transparent;
+  right: 20px;
+  bottom: 11px;
+  z-index: 99999999;
 }
